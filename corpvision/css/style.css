@@ -1,0 +1,22 @@
+/* GLOBAL CSS */
+.root:{
+    /* light theme */
+    --primary-background-color: #fff;
+    --secondary-background-color: #f8f9fa;
+    /* Dark theme */
+    --primary-background-color:#151421;
+    --secondary-background-color:#100F19;
+    /* color */
+    --white-color: #ffffff;
+    --black-color: #000;
+    --green-color: #009f4d;
+    --hover-green-color: #008030;
+    --border-color: #00a63f;
+    --hover-border-color: #00732c;
+    --body-text-color: #666;
+    --footer-color: #151421;
+}
+html, body{
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
