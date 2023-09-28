@@ -1,11 +1,11 @@
 /* GLOBAL CSS */
-.root:{
+:root {
     /* light theme */
     --primary-background-color: #fff;
     --secondary-background-color: #f8f9fa;
     /* Dark theme */
-    --primary-background-color:#151421;
-    --secondary-background-color:#100F19;
+    --primary-background-color: #151421;
+    --secondary-background-color: #100F19;
     /* color */
     --white-color: #ffffff;
     --black-color: #000;
@@ -15,8 +15,49 @@
     --hover-border-color: #00732c;
     --body-text-color: #666;
     --footer-color: #151421;
+    --dark-heading-text-color: #3f3a64;
+    --heading-sub-color: #7e7d7d;
 }
-html, body{
+
+html,
+body {
     font-size: 16px;
     font-family: 'Jost', sans-serif;
+}
+
+/* cài fontsize ,fontweight cho h2,h3,h4 va p */
+/* light mode */
+.heading2__dark {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--dark-heading-text-color);
+    line-height: 45px;
+}
+
+.heading3__dark {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--green-color);
+}
+
+.heading4__dark {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--dark-heading-text-color);
+}
+
+.sub__heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--dark-heading-text-color);
+    line-height: 30px;
+    text-transform: capitalize;
+}
+p{
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--body-text-color);
 }

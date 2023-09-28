@@ -27,8 +27,48 @@
 
 <body>
   <header>
-    <nav>
-      <ul><li><a href="#">Home</a></li></ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <!-- Nav-brand -->
+        <a class="navbar-brand nav__left" href="#">
+          <h2><i class="fa-solid fa-align-right"></i>Cord Vision <br/> <span>Vision to your future</span></h2>
+        </a>
+        <!-- Btn khi xem ở breakpoint nhỏ hơn -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar menu -->
+        <div class="collapse navbar-collapse nav__midle" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Btn tìm kiếm và dark,light mode -->
+        <div class="nav__right">
+            <!-- Btn search -->
+            <div class="btn__search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!-- Btn light & dark mode -->
+            <div class="div btn__mode">
+              <i class="fa-regular fa-moon"></i>
+            </div>
+        </div>
+      </div>
     </nav>
 
   </header>
