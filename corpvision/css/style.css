@@ -1,5 +1,5 @@
 /* GLOBAL CSS */
-.root:{
+:root{
     /* light theme */
     --primary-background-color: #fff;
     --secondary-background-color: #f8f9fa;
