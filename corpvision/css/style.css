@@ -61,3 +61,228 @@ p{
     line-height: 27px;
     color: var(--body-text-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* CSS Dev1 start */
+/* HEADER start */
+header {
+    background: rgba(0, 0, 0, 0.459);
+}
+header .navbar .nav__left{
+    justify-content: center;
+    align-items: flex-start;
+}
+header .navbar .nav__left h2 {
+    color: var(--black-color);
+    line-height: 0.6;
+
+}
+header .navbar .nav__left h2 {
+    color: var(--white-color);
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+header .navbar .nav__left .nav__brand__icon .fa-align-right {
+    color: var(--border-color);
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    line-height: 0.5;
+}
+header .navbar .nav__left h2 span {
+    font-size:0.875rem;
+    line-height: 17px;
+    color: var(--white-color); 
+}
+/* nav menu, nav midle ===================*/
+header .navbar .nav__midle {
+color: var(--white-color);
+flex-direction: column;
+
+}
+header .navbar .nav__midle .nav-item .nav-link {
+    color: #fefefe;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin: auto 0.5rem;
+}
+/* remove icon arrow down of boostrap */
+.navbar-nav .nav-item.dropdown .nav-link::after {
+    display: none;
+}
+/* add new icon arrow down */
+.navbar-nav .nav-item.dropdown .nav-link .fa-angle-down {
+    font-size: 0.8rem;
+}
+
+/* nav right, search btn, mode btn ============ */
+header .navbar .nav__right {
+    color: var(--white-color);
+}
+header .navbar .nav__right .btn__search{
+    background: var(--green-color);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0;
+}
+header .navbar .nav__right .btn__mode {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
+}
+header .navbar .nav__right .btn__mode .btn__light{
+    display: none;
+}
+
+
+
+/* HEADER end*/
+/* CAROUSEL start */
+.carousel {
+
+}
+
+
+/* CAROUSEL end */
