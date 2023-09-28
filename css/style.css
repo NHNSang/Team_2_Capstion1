@@ -1,0 +1,329 @@
+/* GLOBAL CSS */
+:root{
+    /* light theme */
+    --primary-background-color: #fff;
+    --secondary-background-color: #f8f9fa;
+    /* Dark theme */
+    --primary-background-color:#151421;
+    --secondary-background-color:#100F19;
+    /* color */
+    --white-color: #ffffff;
+    --black-color: #000;
+    --green-color: #009f4d;
+    --hover-green-color: #008030;
+    --border-color: #00a63f;
+    --hover-border-color: #00732c;
+    --body-text-color: #666;
+    --footer-color: #151421;
+}
+html, body{
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GALLERY CSS */
+.gallery .gallery_content .gallery_item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.gallery .gallery_content .gallery_item img{
+    width: 100%;
+}
+.gallery .gallery_content .gallery_bottom .gallery_brand img{
+    width: 100%;
+}
+
+/* SERVICE CSS */
+.service .service_content .service_item{
+    padding: 0 20px;
+}
+.service .service_content .service_item img{
+    width: 100%;
+}
+
+/* NEW CSS */
+.new .new_content .new_card .card_content{
+    padding: 0 20px;
+}
+.new .new_content .new_card .card_content .card_top img{
+    width: 100%;
+}
