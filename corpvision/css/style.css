@@ -202,6 +202,13 @@ p{
 header {
     background: rgba(0, 0, 0, 0.459);
 }
+header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+
+}
 header .navbar .nav__left{
     justify-content: center;
     align-items: flex-start;
@@ -235,11 +242,16 @@ flex-direction: column;
 
 }
 header .navbar .nav__midle .nav-item .nav-link {
-    color: #fefefe;
+    color: var(--white-color);
     text-transform: uppercase;
     font-size: 0.9375rem;
     font-weight: 600;
     margin: auto 0.5rem;
+    opacity: 0.8;
+    transition: all 0.5s;
+}header .navbar .nav__midle .nav-item:hover .nav-link {
+    color: #fefefe;
+    opacity: 1;
 }
 /* remove icon arrow down of boostrap */
 .navbar-nav .nav-item.dropdown .nav-link::after {
@@ -280,9 +292,37 @@ header .navbar .nav__right .btn__mode .btn__light{
 
 /* HEADER end*/
 /* CAROUSEL start */
-.carousel {
-
+.carousel__section .carousel__corp {
+    padding: 0;
 }
-
+.carousel__section .carousel__corp .carousel-caption {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgb(63, 58, 100, 0.4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.carousel__section .carousel__corp .carousel-caption h2 {
+    font-size: 4.0625rem;
+    font-weight: 600;
+    line-height: 72px;
+    color: var(--white-color);
+}
+.carousel__section .carousel__corp .carousel-caption p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white-color);
+}
+.carousel__section .carousel__corp .carousel-caption .btn {
+   color: var(--white-color);
+   background: var(--border-color);
+   padding: 1rem 3rem;
+   width: 200px;
+}
 
 /* CAROUSEL end */

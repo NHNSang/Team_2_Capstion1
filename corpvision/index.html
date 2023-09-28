@@ -89,7 +89,68 @@
 
   </header>
 
-  <section class="carousel"></section>
+  <section class="carousel__section">
+
+<!-- test -->
+<div id="myCarousel" class="carousel slide container-fluid" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner container-fluid carousel__corp">
+      <div class="carousel-item active">
+          <img src="./asset/img/b1.jpg" class="d-block w-100" alt="Hình ảnh 1">
+          <div class="carousel-caption">
+             <h2>Embracing success do our best, need best advice  </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum eveniet recusandae, nisi maiores mollitia?</p>
+              <button class="btn btn__carousel"><a href="#">Contact Now</a></button>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="./asset/img/b2.jpg" class="d-block w-100" alt="Hình ảnh 2">
+          <div class="carousel-caption">
+            <h2>We will solve your issues our vision to your future</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum eveniet recusandae, nisi maiores mollitia?</p>
+            <button class="btn btn__carousel">Get Start</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="./asset/img/b3.jpg" class="d-block w-100" alt="Hình ảnh 3">
+          <div class="carousel-caption">
+            <h2>Digital transformation driven by technology</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum eveniet recusandae, nisi maiores mollitia?</p>
+            <button class="btn btn__carousel">Learn More</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./asset/img/b4.jpg" class="d-block w-100" alt="Hình ảnh 3">
+        <div class="carousel-caption">
+          <h2>For those who believe in leaving a mark</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum eveniet recusandae, nisi maiores mollitia?</p>
+          <button class="btn btn__carousel">Contact Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+
+<!-- test -->
+  </section>
 
   <section class="about"></section>
 
@@ -336,6 +397,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+  <!-- call plugin boostrap slide tự trượt -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+            interval: 3000 // Đặt thời gian trượt ở đây (milliseconds)
+        });
+    });
+</script>
+ 
   <!-- JS Font Boxicon -->
   <script src="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js"></script>
 </body>
