@@ -2,7 +2,7 @@
 :root{
     /* light theme */
     --primary-background-color: #fff;
-    --secondary-background-color: #f8f9fa;
+    --secondary-background-color: #F7F7F7;
     /* Dark theme */
     --primary-background-color:#151421;
     --secondary-background-color:#100F19;
@@ -15,10 +15,147 @@
     --hover-border-color: #00732c;
     --body-text-color: #666;
     --footer-color: #151421;
+    --mau-1: #3F3A64;
+
 }
 html, body{
     font-size: 16px;
     font-family: 'Jost', sans-serif;
+}
+/* ABOUT */
+.about .about_content{
+    padding: 80px 0;
+}
+.about .about_content .about_left span{
+    color: var(--body-text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.about .about_content .about_left h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+    padding-top: 20px;
+}
+.about .about_content .about_left p{
+    color: var(--body-text-color);
+    padding: 20px 0;
+}
+.about .about_content .about_left ul{
+    list-style: none;
+    padding: 0;
+}
+.about .about_content .about_left ul li{
+    padding: 10px 0;
+}
+.about .about_content .about_left ul li a{
+    text-decoration: none;
+}
+.about .about_content .about_left ul li a i{
+    background-color: var(--green-color);
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+.about .about_content .about_left ul li a span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--mau-1);
+}
+.about .about_content .about_right{
+    padding: 0 10px;
+    position: relative;
+}
+.about .about_content .about_right .about_haTrai img{
+    border-radius: 15px;
+    position: absolute;
+    height: 479px;
+    top: -85px;
+    left: -35px;
+}
+.about .about_content .about_right .about_ha_phai img{
+    border-radius: 15px;
+}
+
+/* CHALLENGES */
+.challenges{
+    background-color: #F7F7F7;
+}
+.challenges .challenges_content{
+    padding: 50px 0;
+}
+.challenges .challenges_content .challenges_left{
+}
+.challenges .challenges_content .challenges_left span{
+    font-size: 0.8rem;
+    color: var(--body-text-color);
+    font-weight: 600;
+}
+.challenges .challenges_content .challenges_left h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.challenges .challenges_content .challenges_left p{
+    font-size: 1rem;
+    color: var(--body-text-color);
+    padding-bottom: 20px;
+}
+.challenges .challenges_content .challenges_left button{
+    border: none;
+    color: white;
+    background-color: var(--green-color);
+    height: 50px;
+    width: 180px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    font-weight: 700;
+}
+/* SERVICE CSS */
+.service .service_content h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 30px 0;
+}
+.service .service_content .service_item {
+    position: relative;
+}
+.service .service_content .service_item img{
+    border-radius: 10px 10px 0px 0px;
+}
+.service .service_content .service_item .service_item_a{
+    background-color: white;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 85px;
+}
+.service .service_content .service_item .service_item_a a{    
+    text-decoration: none;
+    color: var(--mau-1);
+    font-weight: 600;
+    font-size: 20px;
+}
+.service .service_content .service_item p{
+    color: var(--body-text-color);
+    padding-top: 30px;
+}
+.service .service_content .service_item a{
+    text-decoration: none;
+    color: var(--mau-1);
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 /* GALLERY CSS */
