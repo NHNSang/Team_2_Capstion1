@@ -226,7 +226,8 @@ html, body{
     height: 440px;
 }
 .success .success_content .success_right{
-    padding-left: 10px;
+    width: 60%;
+    padding: 10px 20px;
 }
 .success .success_content .success_right p{
     color: var(--body-text-color);
@@ -237,6 +238,86 @@ html, body{
     color: var(--mau-1);
     font-size: 2rem;
     font-weight: 700;
+}
+.success .success_content .success_right .success_progress .progress_content_1 {
+    padding: 20px 0;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progess_title span{
+    width: 22%;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar{
+    color: #61fded;
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+}
+.success .success_content .success_right .success_progress .progress_content_2 {
+    padding: 20px 0;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progess_title span{
+    width: 7%;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar{
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
+}
+.success .success_content .success_right .success_progress .progress_content_3 {
+    padding: 20px 0;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progess_title span{
+    width: 42%;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar{
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
+}
+.success .success_content .success_right .success_progress .progress_content_4 {
+    padding: 20px 0;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progess_title span{
+    width: 17%;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar{
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);s
 }
 /* FEEDBACK CSS */
 .feedback{
@@ -353,16 +434,22 @@ html, body{
 }
 /* TOGETHER CSS */
 .together{
+    background: url(../asset/img/map.png);
     background-color: #151421;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid rgba(249, 249, 249, 0.1);
 }
 .together .together_content{
     padding: 150px 0;
 }
 .together .together_content h2{
-    font-family: 700;
+    font-weight: 700;
 }
 .together .together_content p{
-    font-family: 600;
+    font-weight: 600;
+    padding: 20px 0;
 }
 .together .together_content form {
     display: flex;
@@ -405,6 +492,9 @@ html, body{
 .footer{
     background-color: #151421;
 }
+.footer .footer_top{
+    padding: 30px 0;
+}
 .footer .footer_top .footer_logo .footer_create_logo i{
     font-size: 30px;
     color: green;
@@ -444,6 +534,9 @@ html, body{
 .footer .footer_top .footer_logo .logo_social a i{
     padding-right: 10px;
 }
+.footer .footer_top .footer_contact{
+    padding-left: 50px;
+}
 .footer .footer_top .footer_contact h3{
     padding: 5px 0px 0px 50px;
 }
@@ -464,7 +557,7 @@ html, body{
     line-height: 30px;
 }
 .footer .footer_top .footer_meta h3{
-    padding: 10px 0px 0px 150px;
+    padding: 5px 0px 0px 150px;
 }
 .footer .footer_top .footer_meta ul{
     padding: 10px 0px 0px 150px;
@@ -472,17 +565,23 @@ html, body{
 .footer .footer_top .footer_meta ul li{
     line-height: 30px;
 }
-.footer .footer_bottom p{
+
+/* COPY RIGHT CSS */
+.copyright{
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+    background-color: #151421;
+}
+.copyright .copyright_content{
+    padding: 15px 0;
+}
+.copyright .copyright_content p{
     color:#97a1a9 ;
 }
-.footer .footer_bottom p a{
+.copyright .copyright_content p a{
     text-decoration: none;
     color: green;
 }
-hr{
-    height: 10px;
-    color: gray;
-}
+
 
 /* all your content here */
 .cd-top--is-visible { 
