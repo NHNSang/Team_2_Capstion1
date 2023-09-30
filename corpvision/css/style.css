@@ -483,3 +483,25 @@ hr{
     height: 10px;
     color: gray;
 }
+
+/* all your content here */
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.cd-top--fade-out {
+    opacity: .5;
+}
+.cd-top i{
+    background-color: var(--green-color);
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+}
