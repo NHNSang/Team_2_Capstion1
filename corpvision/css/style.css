@@ -22,6 +22,8 @@ html, body{
     font-size: 16px;
     font-family: 'Jost', sans-serif;
 }
+
+/* HOME PAGE */
 /* ABOUT */
 .about .about_content{
     padding: 80px 0;
@@ -351,7 +353,7 @@ html, body{
     border: 3px solid #61fded;
     position: absolute;
     right: 0;
-    transform: translateX(-105px);
+    transform: translateX(-130px);
 }
 .success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before{
     content: "";
@@ -362,7 +364,7 @@ html, body{
     border: 1px solid #61fded;
     position: absolute;
     right: 0;
-    transform: translateX(-100px);
+    transform: translateX(-125px);
 }
 
 
@@ -441,7 +443,7 @@ html, body{
     border: 3px solid #5c51ff;
     position: absolute;
     right: 0;
-    transform: translateX(-210px);
+    transform: translateX(-260px);
 }
 .success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
     content: "";
@@ -452,7 +454,7 @@ html, body{
     border: 1px solid #5c51ff;
     position: absolute;
     right: 0;
-    transform: translateX(-205px);
+    transform: translateX(-255px);
 }
 .success .success_content .success_right .success_progress .progress_content_4 {
     padding: 20px 0;
@@ -484,7 +486,7 @@ html, body{
     border: 3px solid #e5529a;
     position: absolute;
     right: 0;
-    transform: translateX(-75px);
+    transform: translateX(-95px);
 }
 .success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before{
     content: "";
@@ -495,7 +497,7 @@ html, body{
     border: 1px solid #e5529a;
     position: absolute;
     right: 0;
-    transform: translateX(-70px);
+    transform: translateX(-90px);
 }
 /* FEEDBACK CSS */
 .feedback{
@@ -817,3 +819,104 @@ footer .footer_top .footer_meta ul li{
     bottom: 5%;
     right: 1%;
 }
+
+/* CONTACT PAGE */
+.agency{
+    background-color: #dcdcdc3b;
+}
+.agency .agency_content h2{
+    font-size: 2rem;
+    color: var(--mau-1);
+    font-weight: 700;
+}
+.agency .agency_content p{
+    color: var(--body-text-color);
+    font-weight: 600;
+    padding: 10px 0;
+}
+.agency .agency_content .agency_contact{
+    display: flex;
+    justify-content: space-between;
+}
+.agency .agency_content .agency_contact .agency_contact_card{
+    background-color: white;
+    width: 100%;
+    margin: 0 30px;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+}
+.agency .agency_content .agency_contact .agency_contact_card i{
+    font-size: 50px;
+    color: var(--mau-1);
+}
+.agency .agency_content .agency_contact .agency_contact_card .agency_contact_title{
+    text-align: left;
+    padding-left: 10px;
+}
+.agency .agency_content .agency_contact .agency_contact_card .agency_contact_title h3{
+    color: var(--mau-1);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.agency .agency_content .agency_contact .agency_contact_card .agency_contact_title p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0;
+}
+.agency .agency_content .agency_contact .agency_contact_card .agency_contact_title a{
+    text-decoration: none;
+    color: var(--body-text-color);
+}
+/* PROJECT CSS */
+.project{
+    padding: 50px 0;
+    background-color: #dcdcdc3b;
+}
+.project .project_content h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.project .project_content p{
+    color: var(--body-text-color);    font-weight: 600;
+}
+.project .project_content .form_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px 100px;
+}
+.project .project_content .form_top input{
+    height: 80px;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.project .project_content .form_bottom{
+    padding-top: 15px;
+}
+.project .project_content .form_bottom input{
+    width: 85%;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 30px;
+}
+.project .project_content .project_bottom {
+    text-align: right;
+    padding: 25px 100px 0px 0px;
+}
+.project .project_content .project_bottom button{
+    height: 50px;
+    width: 170px;
+    font-weight: 700;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+}   
