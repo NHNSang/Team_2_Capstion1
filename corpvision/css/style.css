@@ -1,11 +1,11 @@
 /* GLOBAL CSS */
-:root{
+:root {
     /* light theme */
-    --primary-background-color: #fff;
-    --secondary-background-color: #F7F7F7;
+    --primary-white-background-color: #fff;
+    --secondary-white-background-color: #f8f9fa;
     /* Dark theme */
-    --primary-background-color:#151421;
-    --secondary-background-color:#100F19;
+    --primary-dark-background-color: #151421;
+    --secondary-dark-background-color: #100F19;
     /* color */
     --white-color: #ffffff;
     --black-color: #000;
@@ -15,18 +15,413 @@
     --hover-border-color: #00732c;
     --body-text-color: #666;
     --footer-color: #151421;
-    --mau-1: #3F3A64;
-
+    --dark-heading-text-color: #3f3a64;
+    --heading-sub-color: #7e7d7d;
+    --transition-duration: 0.5s;
 }
-html, body{
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
     font-size: 16px;
     font-family: 'Jost', sans-serif;
 }
 
+/* cài fontsize ,fontweight cho h2,h3,h4 va p */
+/* light mode */
+.heading2__dark {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--dark-heading-text-color);
+    line-height: 45px;
+    text-align: center;
+}
+.heading2__light {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 45px;
+    text-align: center;
+}
+.heading3__dark {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--black-color);
+}
+
+.heading4__dark {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--dark-heading-text-color);
+}
+
+.sub__heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--heading-sub-color);
+    line-height: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+p{
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+/* tạo component button màu xanh chữ trắng ***strart */
+.btn__corp
+{
+    color: var(--white-color);
+    background-color: var(--border-color);
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    
+}
+.btn__corp#btnCorp:hover {
+    background-color: var(--hover-border-color);
+}
+
+/* tạo component button màu xanh chữ trắng ***end */
+
+
 /* HOME PAGE */
-/* ABOUT */
+/* HEADER START */
+/* HEADER start */
+header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+
+}
+header .navbar .nav__left{
+    justify-content: center;
+    align-items: flex-start;
+}
+header .navbar .nav__left h2 {
+    color: var(--black-color);
+    line-height: 0.6;
+
+}
+header .navbar .nav__left h2 {
+    color: var(--white-color);
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+header .navbar .nav__left .nav__brand__icon .fa-align-right {
+    color: var(--border-color);
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    line-height: 0.5;
+}
+header .navbar .nav__left h2 span {
+    font-size:0.875rem;
+    line-height: 17px;
+    color: var(--white-color); 
+}
+/* nav menu, nav midle ===================*/
+header .navbar .nav__midle {
+color: var(--white-color);
+flex-direction: column;
+
+}
+header .navbar .nav__midle .nav-item .nav-link {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin: auto 0.5rem;
+    opacity: 0.8;
+    transition: all 0.5s;
+}header .navbar .nav__midle .nav-item:hover .nav-link {
+    color: #fefefe;
+    opacity: 1;
+}
+/* remove icon arrow down of boostrap */
+.navbar-nav .nav-item.dropdown .nav-link::after {
+    display: none;
+}
+/* add new icon arrow down */
+.navbar-nav .nav-item.dropdown .nav-link .fa-angle-down {
+    font-size: 0.8rem;
+}
+
+/* nav right, search btn, mode btn ============ */
+header .navbar .nav__right {
+    color: var(--white-color);
+    /* z-index: 100; */
+}
+header .navbar .nav__right .btn__search{
+    background: var(--green-color);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0;
+    color: var(--white-color);
+    
+}
+/* *** CSS CHO OVERLAY SEARCH **************START */
+/* set position cho form search */
+header .navbar .nav__right #searchOverlay .form-inline {
+    bottom: 20%;
+    right: 30%;
+}
+/* increase the width of input of search  */
+header .navbar .nav__right #searchOverlay .form-inline input.form-control.mr-sm-2#inputSearchWidth {
+    width: 500px;
+}
+/* css button search của overlaySearch */
+header .navbar .nav__right #searchOverlay .form-inline button.btn {
+    /* background: #ffffff; */
+    border: 1px solid #ffffff;
+    color: var(--white-color);
+}
+/* set position cho nút close */
+header .navbar .nav__right #searchOverlay button#btnCloseOverlaySearch img {
+    position: fixed;
+    bottom: 25%;
+    right: 30%;
+}
+/* Css overlay of btnSearch */
+#searchOverlay {
+    /* display: none; */
+    position: fixed;
+    bottom: 20%;
+    left: 30%;
+    width: 1700px;
+    height: 1700px;
+    background: rgb(0, 115, 44, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 1s;
+}
+/* *** CSS CHO OVERLAY SEARCH **************END */
+
+header .navbar .nav__right .btn__mode {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
+    display: inline-block;
+    /* z-index: 1000; */
+}
+header .navbar .nav__right .btn__mode i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+header .navbar .nav__right .btn__mode .btn__light{
+    display: none;
+}
+/* HEADER END */
+/* CAROUSEL START */
+.carousel {
+    position: relative;
+
+}
+.carousel #carouselExampleDark .carousel-control-prev {
+    position: absolute;
+    top: 100%;
+    left: 86%;
+    margin-right: 0.3rem;
+    z-index: 1001;
+}
+.carousel #carouselExampleDark .carousel-control-next {
+    position: absolute;
+    top: 100%;
+    left: 89%;
+    margin-left: 0.3rem;
+    z-index: 1001;
+}
+/* thay đổi icon btn next prev và tạo border-boxshadow **start*/
+.carousel .carousel-control-prev,.carousel .carousel-control-next{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+/* border: 1px solid #000; */
+box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+color: #000;
+}
+/* thay đổi icon btn next prev và tạo border-boxshadow **end*/
+
+.carousel .carousel-control-prev i.fa-arrow {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transform: translate(3%, 21%);
+    /* z-index: 300; */
+    
+}
+.carousel .carousel-control-prev .fa-arrow-left {
+    color: #000;
+    /* transform: translate(3%, 21%); */
+}
+.carousel .carousel-control-prev .fa-arrow-right {
+    color: #000;
+    transform: translate(3%, 21%);
+}
+
+
+.carousel .carousel-inner .carousel-item img {
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+    /* filter: grayscale(80%); */
+}
+/* overlay of img carousel */
+
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(29, 42, 55, 0.7);
+    z-index: 2;
+}
+/* caption of carousel */
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption {
+    position: absolute;
+    left: 15%;
+    top: 12%;
+    color: var(--white-color);
+    display: inline-block;
+    text-align: left;
+    width: 40vw;
+    margin-left: 0;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption h2.heading2__light {
+    color: var(--white-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    line-height: 1.5;
+    text-align: left;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption p {
+    font-size:1.2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #EDEEEF;
+    margin: 2rem auto;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption .btn__corp:hover {
+    background: var(--hover-green-color);
+}
+/* CAROUSEL END */
+
+
+
+/* Wave start */
+.wave__corp {
+position: relative;
+}
+section .wave
+{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    background: url(../asset/img/wave.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1
+{
+    animation: animate 30s linear 0s infinite;
+    /* animation-delay: 0s;  Có thể viết gọn lên trên */
+    z-index: 1000;
+    opacity: 1;
+    bottom: 80px;
+}
+section .wave.wave2
+{
+    animation: animate2 15s linear -5s infinite;
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 110px;
+}
+section .wave.wave3
+{
+    animation: animate2 15s linear -5s infinite;
+    z-index: 998;
+    opacity: 0.2;
+    bottom: 88px;
+}
+section .wave.wave4
+{
+    animation: animate2 5s linear -5s infinite;
+    z-index: 997;
+    opacity: 0.7;
+    bottom: 97px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+
+}
+/* Wave end */
+
+
+
+/* ABOUT START */
 .about .about_content{
     padding: 80px 0;
+}
+.about .about_content .about_left {
+    flex-basis: 100%;
 }
 .about .about_content .about_left span{
     color: var(--body-text-color);
@@ -36,7 +431,7 @@ html, body{
 .about .about_content .about_left h2{
     color: var(--mau-1);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 700;s
     line-height: 45px;
     padding-top: 20px;
 }
@@ -62,22 +457,22 @@ html, body{
     width: 25px;
     border-radius: 50%;
     text-align: center;
+    margin-right: 0.5rem;
 }
 .about .about_content .about_left ul li a span{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
-    color: var(--mau-1);
+    color: var(--dark-heading-text-color);
 }
 .about .about_content .about_right{
     padding: 0 10px;
-    position: relative;
+    
 }
 .about .about_content .about_right .about_haTrai img{
     border-radius: 15px;
-    position: absolute;
-    height: 479px;
-    top: -85px;
-    left: -35px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .about .about_content .about_right .about_ha_phai img{
     border-radius: 15px;
@@ -527,7 +922,7 @@ html, body{
     object-position: center;
 }
 .feedback .feedback_content .feedback_bottom .your-class .feedback_item .feedback_title p:first-child{
-    color: var(--mau-1);
+    color: var(--dark-heading-text-color);
     font-weight: 600;
 }
 .feedback .feedback_content .slick-slider .slick-track, .slick-slider .slick-list{
@@ -537,7 +932,7 @@ html, body{
     padding: 20px 0;
 }
 .feedback .feedback_content .feedback_bottom .your-class .feedback_item .feedback_title p:first-child {
-    color: var(--mau-1);
+    color: var(--dark-heading-text-color);
     font-weight: 600;
     padding: 25px 0px 5px 43px;
     margin: 0;
@@ -547,11 +942,17 @@ html, body{
 }
 .feedback .feedback_content .slick-dots li button:before {
     font-size: 15px;
-    color: var(--mau-1);
-}   
+    color: var(--dark-heading-text-color);
+    transition: all 0.5s;
+}
+/* tao hover cho nut slick */
+.feedback .feedback_content .slick-dots li:hover button:before {
+    transform: scale(1.3);
+}
+
 /* NEW CSS */
 .new{
-    background-color: #8080800d;
+    background-color: var(--primary-white-background-color);
 }
 .new .new_content{
     padding: 50px 0;
@@ -587,6 +988,13 @@ html, body{
 }
 .new .new_content .new_card .card_content .card_center{
     padding: 20px;
+
+    /* line-height: 2.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    -webkit-line-clamp: 2; */
+
 }
 .new .new_content .new_card .card_content .card_center p{
     text-align: left;
