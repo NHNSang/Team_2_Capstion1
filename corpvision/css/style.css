@@ -244,6 +244,7 @@ header .navbar .nav__right .btn__mode .btn__light{
 /* CAROUSEL START */
 .carousel {
     position: relative;
+    padding: 0;
 
 }
 .carousel #carouselExampleDark .carousel-control-prev {
@@ -417,9 +418,7 @@ section .wave.wave4
 
 
 /* ABOUT START */
-.about .about_content{
-    padding: 80px 0;
-}
+.about .about_content{9}
 .about .about_content .about_left {
     flex-basis: 100%;
 }
@@ -682,12 +681,13 @@ section .wave.wave4
     border-top: 1px solid gainsboro;
 }
 .gallery .gallery_content .gallery_bottom .gallery_brand{
-    padding: 20px 65px;
+    /* padding: 20px 65px; */
     border-top: 1px solid var(--border-color-light);
 }
 .gallery .gallery_content .gallery_bottom .gallery_brand img{
     width: 100%;
     height: 100px;
+    object-fit: contain;
 }
 /* SUCCESS */
 .service .service_content .service_item{
@@ -702,10 +702,10 @@ section .wave.wave4
 .success .success_content .success_left img{
     width: 100%;
     border-radius: 10px;
-    height: 440px;
+    height: 470px;
+    object-fit: contain;
 }
 .success .success_content .success_right{
-    width: 60%;
     padding: 10px 20px;
 }
 .success .success_content .success_right p{
@@ -761,9 +761,6 @@ section .wave.wave4
     right: 0;
     transform: translateX(-125px);
 }
-
-
-
 
 .success .success_content .success_right .success_progress .progress_content_2 {
     padding: 20px 0;
@@ -838,7 +835,7 @@ section .wave.wave4
     border: 3px solid #5c51ff;
     position: absolute;
     right: 0;
-    transform: translateX(-260px);
+    transform: translateX(-240px);
 }
 .success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
     content: "";
@@ -849,7 +846,7 @@ section .wave.wave4
     border: 1px solid #5c51ff;
     position: absolute;
     right: 0;
-    transform: translateX(-255px);
+    transform: translateX(-235px);
 }
 .success .success_content .success_right .success_progress .progress_content_4 {
     padding: 20px 0;
@@ -1177,10 +1174,10 @@ footer .footer_top .footer_cate ul li{
     line-height: 30px;
 }
 footer .footer_top .footer_meta h3{
-    padding: 5px 0px 0px 150px;
+    padding: 5px 0px 0px 50px;
 }
 footer .footer_top .footer_meta ul{
-    padding: 10px 0px 0px 150px;
+    padding: 10px 0px 0px 50px;
 }
 footer .footer_top .footer_meta ul li{
     line-height: 30px;
@@ -1328,3 +1325,114 @@ footer .footer_top .footer_meta ul li{
     border: none;
     border-radius: 10px;
 }   
+
+/* Responsive */
+/* Make responsive for xl */
+@media (max-width: 1199.98px){
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption h2.heading2__light{
+    font-size: 2.5rem;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption p{
+    font-size: 1rem;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+    padding-top: 60px ;
+}
+.carousel button.carousel-control-prev{
+    margin-left: -1.7rem;
+}
+.about .about_content{
+    padding: 0;
+    transform: translateY(-10px);
+    height: 550px;
+}
+.challenges .challenges_content .challenges_right{
+    padding: 55px 32px;
+    width: 50%;
+}
+.challenges .challenges_content .challenges_right .challenges_icon{
+    height: 150px;
+    width: 200px;
+}
+.service .service_content .service_item .service_item_a {
+    bottom: 110px;
+    left: 50px;
+    width: 65%;
+
+}
+
+.service .service_content .service_item .service_item_a a {
+    font-size: 1rem;
+
+}
+.gallery .gallery_content .gallery_bottom .gallery_brand img {
+    height: 80%;
+}
+.success .success_content .success_left img{
+    margin-top: 40px;   
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+    transform: translateX(-80px)
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before{
+    transform: translateX(-75px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after{
+    transform: translateX(-170px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
+    transform: translateX(-165px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after{
+    transform: translateX(-65px)
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before{
+    transform: translateX(-60px)
+}
+.feedback .feedback_content {
+    padding: 15px;
+}
+.new .new_content .new_card .card_content .card_bottom{
+    padding: 0;
+}
+.new .new_content .new_card .card_content .card_layout{
+    padding: 0;
+}
+footer .footer_top .footer_logo .footer_create_logo a p:first-child {
+    font-size: 1.5rem;
+}
+footer .footer_top .footer_logo{
+    padding: 0;
+}
+footer .footer_top .footer_contact{
+    padding: 0;
+}
+footer .footer_top .footer_cate{
+    padding: 0;
+}
+footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, footer .footer_top .footer_meta h3 {
+    font-size: 1.3rem;
+    padding-left: 30px;
+}footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul {
+    padding: 15px 0px 0px 30px;
+}
+
+
+
+
+
+
+/* Make responsive for lg */
+@media (max-width: 991.98px){
+}
+
+/* Make responsive for md */
+@media (max-width: 767.98px){   
+}
+
+
+/* Make responsive for sm */
+@media (max-width: 575.98px){
+    
+}
+
