@@ -1429,7 +1429,7 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 }
 .about .about_content{
     flex-direction: column;
-    height: 110vh;
+    min-height: 90vh;
 }
 .about .about_content .about_right{
     padding:20px;
@@ -1437,7 +1437,7 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 }
 .challenges .challenges_content{
     flex-direction: column;
-    min-height: 95vh;
+    min-height: 75vh;
 }
 .challenges .challenges_content .challenges_right{
     width: 100%;
@@ -1446,19 +1446,57 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 }
 .challenges .challenges_content .challenges_right .challenges_icon{
     width: 100%;
-
 }
-
-
-
-
-
-
-
-
+.service .service_content .service_card{
+    flex-direction: column;
 }
-
-
+.service .service_content .service_item{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.service .service_content .service_item .service_item_a{
+    left: 80px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+    transform: translateX(-130px)
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before{
+    transform: translateX(-125px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after{
+    transform: translateX(-270px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
+    transform: translateX(-265px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after{
+    transform: translateX(-95px)
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before{
+    transform: translateX(-90px)
+}
+.new .new_content .new_card{
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.new .new_content .new_card .card_content{
+    padding-bottom: 20px;
+}
+footer .footer_top .footer_cate, footer .footer_top .footer_meta{
+    padding-top: 50px;
+}
+footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, footer .footer_top .footer_meta h3{
+    padding: 0;
+}
+footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul{
+    padding: 0;
+}
 
 
 
