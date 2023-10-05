@@ -1416,15 +1416,56 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 }footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul {
     padding: 15px 0px 0px 30px;
 }
-
-
-
-
-
-
-/* Make responsive for lg */
-@media (max-width: 991.98px){
+.together .together_content form button{
+    padding: 0 15px;
 }
+
+/* Make responsive for lg 768-881*/
+@media (max-width: 991.98px){
+
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+    margin: 0;
+    width: 60%;
+}
+.about .about_content{
+    flex-direction: column;
+    height: 110vh;
+}
+.about .about_content .about_right{
+    padding:20px;
+    width: 100%;
+}
+.challenges .challenges_content{
+    flex-direction: column;
+    min-height: 95vh;
+}
+.challenges .challenges_content .challenges_right{
+    width: 100%;
+    padding: 0;
+    padding-top: 60px;
+}
+.challenges .challenges_content .challenges_right .challenges_icon{
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 /* Make responsive for md */
 @media (max-width: 767.98px){   
