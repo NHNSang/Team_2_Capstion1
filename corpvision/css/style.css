@@ -624,6 +624,10 @@ section .wave.wave4
     width: 100%;
 
 }
+.gallery .gallery_content .gallery_item  .gallery_a{
+    width: 100%;
+    padding: 0;
+}
 .gallery .gallery_content .gallery_item  .gallery_a .gallery_img{
     position: relative;
     overflow: hidden;
@@ -1498,20 +1502,62 @@ footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, foote
     padding: 0;
 }
 
-
-
-
-
-
-
-
-/* Make responsive for md */
+/* Make responsive for md 576-767*/
 @media (max-width: 767.98px){   
+.carousel .carousel-inner .carousel-item .carousel-item .carousel-caption{
+    width: 30%;
 }
 
-
+.about .about_content{
+    min-height: 80vh;
+}
+.service .service_content .service_item{
+    width: 100%;
+}
+.service .service_content .service_item .service_item_a{
+    left: 75px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+    transform: translateX(-95px);
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before {
+    transform: translateX(-90px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after {
+    transform: translateX(-200px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before {
+    transform: translateX(-195px)
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after {
+    transform: translateX(-70px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before {
+    transform: translateX(-65px);
+}
+footer .footer_top .footer_contact{
+    padding-top: 50px;
+}
+footer .footer_top .footer_cate{
+    width: 50%;
+}
+footer .footer_top .footer_meta {
+    width: 50%;
+}
+}
 /* Make responsive for sm */
 @media (max-width: 575.98px){
-    
+.success .success_content .success_left{
+    width: 100%;
+}
+.success .success_content .success_right{
+    width: 100%;
+}
+footer .footer_top .footer_logo{
+    width: 100%;
+}
+footer .footer_top .footer_contact{
+    width: 100%;
+}
 }
 
