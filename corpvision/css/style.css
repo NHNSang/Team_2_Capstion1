@@ -28,6 +28,7 @@ html,
 body {
     font-size: 16px;
     font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
 }
 
 /* cài fontsize ,fontweight cho h2,h3,h4 va p */
@@ -615,8 +616,6 @@ section .wave.wave4
     font-weight: 700;
 }
 .gallery .gallery_content .gallery_item{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
     gap: 20px;
     padding: 30px 0px 50px 0;
 }
@@ -1423,7 +1422,7 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 .together .together_content form button{
     padding: 0 15px;
 }
-
+}
 /* Make responsive for lg 768-881*/
 @media (max-width: 991.98px){
 
@@ -1501,10 +1500,19 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul{
     padding: 0;
 }
-
+}
 /* Make responsive for md 576-767*/
 @media (max-width: 767.98px){   
-.carousel .carousel-inner .carousel-item .carousel-item .carousel-caption{
+    .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+        width: 80%!important;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        left: 10%;
+}
+carousel-item .carousel-caption{
     width: 30%;
 }
 
@@ -1540,13 +1548,37 @@ footer .footer_top .footer_contact{
 }
 footer .footer_top .footer_cate{
     width: 50%;
-}
+}   
 footer .footer_top .footer_meta {
     width: 50%;
 }
+.gallery .gallery_content .gallery_item .gallery_a{
+    width: 48%;
 }
+.gallery .gallery_content .gallery_bottom .gallery_brand{
+    width: 33.33%;
+}
+.success .success_content .success_left img{
+    margin: 0;
+}
+.new .new_content .new_card .card_content .card_center{ 
+}
+.new .new_content .new_card .card_content .card_center p{
+    background-color: var(--green-color);
+    color: white;
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+}
+.new .new_content .new_card .card_content .card_center a{
+    display: inline-block;
+}
+
+}
+
 /* Make responsive for sm */
 @media (max-width: 575.98px){
+
 .success .success_content .success_left{
     width: 100%;
 }
@@ -1560,4 +1592,77 @@ footer .footer_top .footer_contact{
     width: 100%;
 }
 }
+
+/* Make responsive for ip 12promax 414*/
+@media (max-width: 414.98px){
+h2{
+    font-size: 1.8rem !important;
+}
+p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.carousel .heading2__light{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.about .about_content .about_right{
+    padding: 0 !important;
+}
+.about .about_content .about_right .about_haTrai{
+    padding: 0 !important;
+}
+.about .about_content .about_right .about_haTrai img{
+    height: 90%;
+}
+.gallery .gallery_content .gallery_item .gallery_a{
+    width: 47.5%;
+}
+.success .success_content .success_left{
+    padding: 0;
+}
+.success .success_content .success_left img{
+    height: auto;
+}
+.new .new_content .new_card .card_content{
+    padding: 0;
+}
+.new .new_content .new_card{
+    margin: 0 ;
+}
+.service .service_content .service_item p{
+    margin-top: 30px;
+}
+.service .service_content .service_item .service_item_a {
+    left: 48px;
+    top: 50%;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before {
+    transform: translateX(-60px);
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after {
+    transform: translateX(-65px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after {
+    transform: translateX(-140px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before {
+    transform: translateX(-135px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after {
+    transform: translateX(-50px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before {
+    transform: translateX(-45px);
+}
+footer .footer_top{
+    padding: 15px 15px;
+}
+}
+
 
