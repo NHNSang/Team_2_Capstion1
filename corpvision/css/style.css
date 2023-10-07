@@ -1330,9 +1330,11 @@ footer .footer_top .footer_meta ul li{
 }
 .project .project_content .form_top{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 10px 100px;
+    padding: 0 150px;
+}
+.project .project_content .form_top .form_top_box{
+    gap: 20px;
 }
 .project .project_content .form_top input{
     height: 80px;
@@ -1340,12 +1342,13 @@ footer .footer_top .footer_meta ul li{
     padding: 30px;
     border-radius: 10px;
     font-size: 1.2rem;
+    width: 49%;
 }
 .project .project_content .form_bottom{
-    padding-top: 15px;
+    padding: 20px 140px;
 }
 .project .project_content .form_bottom input{
-    width: 85%;
+    width: 100%;
     height: 120px;
     border: none;
     border-radius: 10px;
@@ -1354,7 +1357,7 @@ footer .footer_top .footer_meta ul li{
 }
 .project .project_content .project_bottom {
     text-align: right;
-    padding: 25px 100px 0px 0px;
+    width: 90%;
 }
 .project .project_content .project_bottom button{
     height: 50px;
@@ -1772,6 +1775,12 @@ footer .footer_top{
 .agency .agency_content .agency_contact .agency_contact_card .agency_contact_title h3{
     font-size: 1.4rem;
 }
+.project .project_content .form_top input{
+    width: 48.5%;
+}
+.project .project_content .project_bottom{
+    width: 87%;
+}
 }
 
 /* Make responsive for lg 768-991*/
@@ -1796,6 +1805,13 @@ footer .footer_top{
 .project .project_content .form_top{
     padding: 0;
 }
+.project .project_content .form_top .form_top_box{
+    padding: 10px;
+}
+.project .project_content .project_bottom{
+    padding: 0;
+    width: 100%;
+}
 }
 
 
@@ -1803,6 +1819,9 @@ footer .footer_top{
 @media (max-width: 767.98px){
 .project .project_content .project_bottom {
     padding: 25px 0;
+}
+.project .project_content .form_top input{
+    width: 48%;
 }
 }
 
@@ -1817,18 +1836,41 @@ footer .footer_top{
     .agency .agency_content .agency_contact .agency_contact_total{
         padding: 0 10px;
     }
+    .project .project_content .form_top input{
+        width: 48%;
+    }
+    .project .project_content .form_bottom{
+        padding: 15px 10px;
+    }
+    .project .project_content .form_top{
+        padding: 0 10px;
+    }
+    .project .project_content .project_bottom{
+        width: 98%;
+    }
 }
     
 /* Make responsive for ip XR 414*/
 @media (max-width: 414.98px){
-    
+.agency .agency_content h2{
+    font-size: 1.5rem !important;
+}
+.project .project_content .form_top input{
+    width: 100%;
+}
 }
 
 /* Make responsive for iphone 12promax390.98px */
-@media (max-width: 390.98px)
+@media (max-width: 390.98px){
+
+}
 
 /* Make responsive for iphone SE 375px */
-@media (max-width: 375.98px)
+@media (max-width: 375.98px){}
     
 /* Make responsive for SS S8+ 360px */
-@media (max-width: 360.98px)
+@media (max-width: 360.98px) {
+    .project .project_content .project_bottom{
+        width: 97%;
+    }
+}
