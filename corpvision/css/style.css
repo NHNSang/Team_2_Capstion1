@@ -1578,7 +1578,12 @@ footer .footer_top .footer_meta {
 
 /* Make responsive for sm */
 @media (max-width: 575.98px){
-
+.carousel #carouselExampleDark .carousel-control-next{
+    left: 86%;
+}
+.carousel #carouselExampleDark .carousel-control-prev{
+    left: 81%;
+}   
 .success .success_content .success_left{
     width: 100%;
 }
@@ -1593,7 +1598,7 @@ footer .footer_top .footer_contact{
 }
 }
 
-/* Make responsive for ip 12promax 414*/
+/* Make responsive for ip XR 414*/
 @media (max-width: 414.98px){
 h2{
     font-size: 1.8rem !important;
@@ -1665,4 +1670,51 @@ footer .footer_top{
 }
 }
 
+/* Make responsive for iphone 12promax 390.98px */
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 46.8%;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::after {
+    transform: translateX(-15px);
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::before{
+    transform: translateX(-10px);
+}
+
+
+
+/* Make responsive for iphone SE 375px */
+@media (max-width: 375.98px) {
+.about .about_content {
+    min-height: 95vh;
+}
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 47%;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::after{
+    transform: translateX(-10px);
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::before{
+    transform: translateX(-5px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after {
+    transform: translateX(-130px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before {
+    transform: translateX(-125px);
+}
+.service .service_content .service_item .service_item_a{
+    left: 33px;
+    width: 75%;
+}
+
+}
+
+
+/* Make responsive for SS S8+ 360px */
+@media (max-width: 360.98px){
+    .service .service_content .service_item .service_item_a {
+        left: 28px;
+    }
+}
 
