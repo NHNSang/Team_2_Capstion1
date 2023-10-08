@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Service</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,27 +10,516 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/service.css">
+
+
+  <!-- Font Boxicon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- GG Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
+  <!-- header -->
+  <header class="container-fluid m-2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-center">
+      <div class="container container-sm container-md container-lg container-xl">
+        <!-- Nav-brand -->
+        <a class="navbar-brand nav__left d-flex" href="#">
+          <div class="nav__brand__icon">
+            <i class="fa fa-align-right"></i>
+          </div>
+          <h2>Corp Vision <br /> <span>Vision to your future</span></h2>
+        </a>
+        <!-- Btn khi xem ở breakpoint nhỏ hơn -->
+        <button id="btnMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <!-- Navbar menu -->
+        <div class="collapse navbar-collapse nav__midle d-none d-flex" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Page <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                <li><a class="dropdown-item" href="#">Elements page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__right d-flex justify-content-between">
+            <!-- Btn search -->
+            <button class="btn__search border-0" id="btnSearch">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+  
+            <!-- make a overlay of btnSearch ****start-->
+            <div id="searchOverlay">
+              <!-- use css to add div overlay for button when visitor click into btnSearch -->
+              <button id="btnCloseOverlaySearch">
+                <img src="./img/close.png" alt="">
+              </button>
+              <form class="form-inline d-flex position-fixed">
+                <input id="inputSearchWidth" class="form-control mr-sm-2" type="search" placeholder="Type content to find something" aria-label="Search">
+                <button class="btn my-2 my-sm-0 m-3" type="submit">Search</button>
+            </form>
+            <!-- make a overlay of btnSearch ****End-->
+            </div>
+            <!-- Btn light & dark mode -->
+            <div>
+              <button class="btn__mode">
+                <i class='bx bx-moon btn__dark active'></i>
+                <i class='bx bx-sun btn__light'></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Btn tìm kiếm và dark,light mode -->
+        
+      </div>
+    </nav>
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+  </header>
+  <!-- Breadcrumb start-->
+  <section class="breadcrumb container-fluid">
+    <div class="breadcrumb__overlay">
+      <img src="../asset/img/b4.jpg" alt="hinh background 1">
+    </div>
+    <div class="breadcrumb__text container-fluid">
+      <h2 class="fs-1 fs-2">Services</h2>
+      <p class="fs-1 fs-2 fs-3 fs-4 fs-5 fs-6">We work with bold brands that we believe in</p>
+    </div>
+  </section>
+  <!-- Breadcrumb ***end***-->
+  <!-- check our services ***start-->
+  <section></section>
+  <section class="services container-fluid pt-5 pb-5">
+    <div class="container container-sm container-md container-lg container-xl">
+      <div class="services__content">
+        <div class="services__top text-centers">
+          <p class="sub__heading">
+            CHECK OUR SERVICES
+          </p>
+          <h2 class="heading2__dark">
+            Introduce our best and reliable services<br> for all your business
+          </h2>
+        </div>
+        <div class="services__bot mt-5">
+          <div class="servies__grid">
+            <!-- grid line 1 -->
+            <div class="row justify-content-center">
+              <!-- grid line 1, text -->
+              <div class="col-12 col-md-12 col-lg-6 col-xl-6 col__item col__services__item__left text-center">
+                <!-- icon -->
+                <i class="fa-solid fa-gear"></i>
+                <h3 class="heading3__dark">
+                  Product Design
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum explicabo, ab blanditiis
+                  asperiores vero quis voluptate amet dolore iusto nisi quod nulla ex labore eius dicta minima
+                  perspiciatis quam.</p>
+                <button class="btn__corp border-0">Know more</button>
+              </div>
+              <!-- grid line 2, pic -->
+              <div class="col-12 col-md-12 col-lg-6 col-xl-6 col__item col__services__item__right">
+                <div class="col__services__item__pic">
+                  <img src="../asset/img/s1.jpg" alt="Hinh anh service1">
+                </div>
+              </div>
+
+              <!-- grid line 3, pic -->
+              <div class="col-12 col-md-12 col-lg-6 col-xl-6 col__item col__services__item__right">
+                <div class="col__services__item__pic">
+                  <img src="../asset/img/s2.jpg" alt="Hinh anh service1">
+                </div>
+              </div>
+
+              <!-- grid line 1, text -->
+              <div class="col-12 col-md-12 col-lg-6 col-xl-6 col__item col__services__item__left text-center">
+                <!-- icon -->
+                <i class="fa-solid fa-users-rectangle"></i>
+                <h3 class="heading3__dark">
+                  E-commerce Design
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum explicabo, ab blanditiis
+                  asperiores vero quis voluptate amet dolore iusto nisi quod nulla ex labore eius dicta minima
+                  perspiciatis quam.</p>
+                <button class="btn__corp border-0">Know more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- check our service **end -->
+  <section></section>
+  <!-- solution ***start -->
+  <section class="solution container-fluid pt-5 pb-5">
+    <div class="container container-sm container-md container-lg container-xl">
+      <div class="solution__content">
+        <!-- introduction of solution -->
+        <div class="solution__intro text-center">
+          <p class="sub__heading">
+            BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS
+          </p>
+          <h2 class="heading2__dark">What industries we serve?</h2>
+        </div>
+        <!-- category of solution -->
+        <div class="solution__cate">
+          <div class="row solution__cate__grid">
+            <!-- gird line 1, 3 col -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col__item d-flex justify-content-around align-items-start p-5">
+              <!-- div icon -->
+              <div class="solution__cate__item__icon">
+                <i class="fa-solid fa-money-bill-1-wave"></i>
+              </div>
+              <!-- div text -->
+              <div class="solution__cate__item__text">
+                <a href="#">
+                  <h3 class="heading3__dark">
+                    Investment Planning
+                  </h3>
+                </a>
+                <p class="sub__heading">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col__item d-flex justify-content-around align-items-start p-5">
+              <!-- div icon -->
+              <div class="solution__cate__item__icon">
+                <i class="fa-regular fa-file"></i>
+              </div>
+              <!-- div text -->
+              <div class="solution__cate__item__text">
+                <a href="#">
+                  <h3 class="heading3__dark">
+                    Commercial Projects
+                  </h3>
+                </a>
+                <p class="sub__heading">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col__item d-flex justify-content-around align-items-start p-5">
+              <!-- div icon -->
+              <div class="solution__cate__item__icon">
+                <i class="fa-regular fa-building"></i>
+              </div>
+              <!-- div text -->
+              <div class="solution__cate__item__text">
+                <a href="#">
+                  <h3 class="heading3__dark">
+                    Banking & Finance
+                  </h3>
+                </a>
+                <p class="sub__heading">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+            <!-- gird line 2, 3 col -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col__item d-flex justify-content-around align-items-start p-5">
+              <!-- div icon -->
+              <div class="solution__cate__item__icon">
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              <!-- div text -->
+              <div class="solution__cate__item__text">
+                <a href="#">
+                  <h3 class="heading3__dark">
+                    Competitive Research
+                  </h3>
+                </a>
+                <p class="sub__heading">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col__item d-flex justify-content-around align-items-start p-5">
+              <!-- div icon -->
+              <div class="solution__cate__item__icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <!-- div text -->
+              <div class="solution__cate__item__text">
+                <a href="#">
+                  <h3 class="heading3__dark">
+                    International Business
+                  </h3>
+                </a>
+                <p class="sub__heading">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col__item d-flex justify-content-around align-items-start p-5">
+              <!-- div icon -->
+              <div class="solution__cate__item__icon">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <!-- div text -->
+              <div class="solution__cate__item__text">
+                <a href="#">
+                  <h3 class="heading3__dark">
+                    Strategic Approach
+                  </h3>
+                </a>
+                <p class="sub__heading">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- solution ***end -->
+  <section></section>
+  <!-- Contact form ***start-->
+  <section class="contact container-fluid pt-5 pb-5">
+    <div class="container container-sm container-md container-lg container-xl">
+      <div class="contact__content d-flex flex-column justify-content-center align-items-center">
+        <div class="row contact__grid">
+          <!-- contact colummn left -->
+          <div class="col-6 col__item col__left p-5">
+            <p>INNOVATIVE TECHNOLOGY</p>
+            <h2 class="heading2__light">We use latest technologies that are proven and practical</h2>
+            <!-- contact location -->
+            <div class="col__item__info d-flex justify-content-between align-items-center mt-5 mb-5">
+              <div class="col__item__info__icon"><i class="fa-regular fa-map"></i></div>
+              <div class="col__item__info__text">
+                <p>
+                  Our Location:<br>
+                  <span>Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</span>
+                </p>
+              </div>
+            </div>
+            <!-- contact phone number -->
+            <div class="col__item__info d-flex justify-content-start align-items-center mt-5 mb-5">
+              <div class="col__item__info__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="col__item__info__text">
+                <p>
+                  Phone Numbers<br>
+                  <a href="tel:++142 5897555">+142 5897555, +142 5897566</a>
+                </p>
+              </div>
+            </div>
+            <!-- contact Email -->
+            <div class="col__item__info d-flex justify-content-start align-items-center mt-5 mb-5">
+              <div class="col__item__info__icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="col__item__info__text">
+                <p>
+
+                  Email Addresses<br>
+                  <a href="mailto:mail@company1.com"> mail@company1.com, mail@company2.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- contact column right -->
+          <div class="col-6 col__item col__right p-5">
+            <div class="col__right__text text-left p-3">
+              <h2 class="heading2__dark text-left">Let's talk about your project</h2>
+              <p>We have made it easy for clients to reach us and get their solutions weaved
+              </p>
+            </div>
+            <!-- Form sign up -->
+            <form action="">
+              <div class="mb-4">
+                <input type="text" class="form-control bg-light border-0 p-3" name="" id="" aria-describedby="helpId" placeholder="Your name*" required>
+              </div>
+              <div class="mb-4">
+                
+                <input type="email" class="form-control bg-light border-0 p-3" name="" id="" aria-describedby="emailHelpId"
+                  placeholder="Email*" required>
+              </div>
+
+              <div class="mb-4">
+                <textarea class="form-control bg-light border-0 p-3" name="" id="" rows="3" placeholder="Message"></textarea>
+              </div>
+              <button class="btn__corp" id="btnGetStart">
+                Get Started
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact form ***end -->
+<section></section>
+  <!-- values ***start -->
+<section class="values container-fluid">
+  <div class="container container-sm container-md container-lg container-xl">
+    <div class="values__content d-flex flex-column justify-content-center align-items-center text-center">
+      <div class="values__content__top m-5">
+        <span class="sub__heading">
+          BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS
+        </span>
+        <h2 class="heading2__dark">
+          Services that create identities, build brands, and get results
+        </h2>
+      </div>
+      <div class="values__content__bot m-5">
+        <!-- grid box of values -->
+        <div class="row">
+          <div class="col-12 col__values__item p-5">
+            <img src="../asset/img/icon1.png" alt="">
+            <h3 class="heading__dark fs-1 fs-2 fs-3 fs-4 fs-5 fs-6 m-3">
+              Business Analysis
+            </h3>
+            <p>
+              Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.
+            </p>
+          </div>
+          <div class="col-12 col__values__item p-5">
+            <img src="../asset/img/icon2.png" alt="">
+            <h3 class="heading__dark fs-1 fs-2 fs-3 fs-4 fs-5 fs-6 m-3">
+              Project Reporting
+            </h3>
+            <p>
+              Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.
+            </p>
+          </div>
+          <div class="col-12 col__values__item p-5">
+            <img src="../asset/img/icon3.png" alt="">
+            <h3 class="heading__dark fs-1 fs-2 fs-3 fs-4 fs-5 fs-6 m-3">
+              Security Enhanced
+            </h3>
+            <p>
+              Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor eget ex fermentum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- values ***end -->
+
+
+  <!-- thêm code footer từ Dev3 -->
+  <!-- Footer ***start -->
+ 
+  <!-- FOOTER START -->
+<footer>
+  <div class="container">
+    <div class="footer_top row text-white">
+      <div class="footer_logo col-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+        <div class="footer_create_logo d-flex align-items-center">
+          <i class="fa-solid fa-align-right"></i>
+          <a href="">
+            <p>Corp Vertion</p>
+            <p>Vision to your future</p>
+          </a>
+        </div>
+        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+        <div class="logo_social">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer_contact col-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+        <h3>CONTACT INFO</h3>
+        <ul>
+          <li>Address : Corp Vision, 343 marketing, #21 <br> cravel 1st lane street, NY - 62617.
+          </li>
+          <li>Phone Number :
+            <a href="">+1(21) 234 4567</a>
+          </li>
+          <li>Email :
+            <a href="">info@example.com</a>
+          </li>
+          <li>Support :
+            <a href="">info@support.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_cate col-3 col-xl-3 col-lg-3 col-md-5 col-sm-12">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li><a href="">Marketing Strategy</a></li>
+          <li><a href="">Startup Business</a></li>
+          <li><a href="">Web development</a></li>
+        </ul>
+      </div>
+      <div class="footer_meta col-3 col-xl-3 col-lg-3 col-md-5 col-sm-12">
+        <h3>META</h3>
+        <ul>
+          <li><a href="">Log in</a></li>
+          <li><a href="">Entries feed</a></li>
+          <li><a href="">Comments feed</a></li>
+          <li><a href="">WordPress.org</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- COPY RIGHT -->
+  <section class="copyright">
+    <div class="container">
+      <div class="copyright_content text-center">
+        <p>© 2023 Corp Vision All Rights Reserved | WordPress Theme by <a href="">W3Layouts.</a></p>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- FOOTER END -->
+
+  <!-- all your content here --> 
+  <a href="#" class="cd-top text-replace js-cd-top">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+
+  <!-- footer ***end -->
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <!-- call plugin boostrap slide tự trượt -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+        interval: 3000 // Đặt thời gian trượt ở đây (milliseconds)
+      });
+    });
   </script>
+
+  <!-- JS Font Boxicon -->
+  <script src="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/dist/boxicons.min.js"></script>
+  <!-- Main Javascript -->
+  <script src="../index.js"></script>
 </body>
 
 </html>
