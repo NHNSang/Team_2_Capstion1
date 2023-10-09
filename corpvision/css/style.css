@@ -1862,7 +1862,9 @@ section.values {
         width: 65%;
     
     }
-    
+    .gallery .gallery_content .gallery_item .gallery_a{
+        width: 31.9% !important;
+    }
     .service .service_content .service_item .service_item_a a {
         font-size: 1rem;
     
@@ -1963,6 +1965,7 @@ section.values {
 }
 .service .service_content .service_item .service_item_a{
     left: 80px;
+    bottom: 88px;
 }
 .success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
     transform: translateX(-130px)
@@ -1999,10 +2002,16 @@ footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, foote
 footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul{
     padding: 0;
 }
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 31.4% !important;
+}
+footer .footer_top .footer_contact {
+    padding: 0;
+}
 }
 /* Make responsive for md 576-767*/
 @media (max-width: 767.98px){   
-    .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
         width: 80%!important;
         padding: 0 !important;
         display: flex;
@@ -2072,7 +2081,9 @@ footer .footer_top .footer_meta {
 .new .new_content .new_card .card_content .card_center a{
     display: inline-block;
 }
-
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 30.8% !important;
+}
 }
 
 /* Make responsive for sm */
@@ -2115,6 +2126,9 @@ p{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.about .about_content {
+    min-height: 98vh;
+}
 .about .about_content .about_right{
     padding: 0 !important;
 }
@@ -2125,7 +2139,7 @@ p{
     height: 90%;
 }
 .gallery .gallery_content .gallery_item .gallery_a{
-    width: 47.5%;
+    width: 100% !important;
 }
 .success .success_content .success_left{
     padding: 0;
@@ -2171,6 +2185,9 @@ footer .footer_top{
 
 /* Make responsive for iphone 12promax 390.98px */
 @media (max-width: 390.98px){
+    .about .about_content {
+        min-height: 130vh;
+    }
 .gallery .gallery_content .gallery_item .gallery_a {
     width: 46.8%;
     font-size: 0.9rem !important;
@@ -2181,12 +2198,15 @@ footer .footer_top{
 .success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::before{
     transform: translateX(-10px);
 }
+.service .service_content .service_item .service_item_a a{
+    font-size: 0.8rem!important;
+}
 }
 
 /* Make responsive for iphone SE 375px */
 @media (max-width: 375.98px) {
 .about .about_content {
-    min-height: 95vh;
+    min-height: 130vh;
 }
 .gallery .gallery_content .gallery_item .gallery_a {
     width: 47%;
