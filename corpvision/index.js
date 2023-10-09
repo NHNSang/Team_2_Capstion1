@@ -50,7 +50,3 @@ document.getElementById('btnCloseOverlaySearch').addEventListener('click', funct
     
 
 // }
-
-document.getElementById("anPre").onclick = function () {
-    document.getElementById("anPre").style.display = "none";
-}
