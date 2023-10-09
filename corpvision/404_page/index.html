@@ -2,35 +2,306 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/404.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" class="">
+    <!-- link css  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
+
+  
+
+    <div class="pull-right-demo-bar toggle-right-sidebar">
+        <span class="fa title-open-right-sidebar tooltipstered fa-angle-double-right"></span>
+    </div>
+
+    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+        <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+
+            <div id="w3lDemoBar" class="w3l-demo-bar">
+                <div class="demo-btns">
+                    <a href="https://w3layouts.com/?p=4763800000032896">
+                        <span class="w3l-icon -back">
+                            <span class="fa fa-arrow-left"></span>
+                        </span>
+                        <span class="w3l-text">Back</span>
+                    </a>
+                    <a href="https://w3layouts.com/?p=4763800000032896">
+                        <span class="w3l-icon -download">
+                            <span class="fa fa-download"></span>
+                        </span>
+                        <span class="w3l-text">Download</span>
+                    </a>
+                    <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896"
+                        class="no-margin-bottom-mobile">
+                        <span class="w3l-icon -buy">
+                            <span class="fa fa-shopping-cart"></span>
+                        </span>
+                        <span class="w3l-text">Buy</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="right-sidebar-panel-content animated fadeInRight" tabindex="5003"
+                style="overflow: hidden; outline: none;">
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- header -->
+  <header class="container-fluid m-2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-center">
+      <div class="container container-sm container-md container-lg container-xl">
+        <!-- Nav-brand -->
+        <a class="navbar-brand nav__left d-flex" href="#">
+          <div class="nav__brand__icon">
+            <i class="fa fa-align-right"></i>
+          </div>
+          <h2>Corp Vision <br /> <span>Vision to your future</span></h2>
+        </a>
+        <!-- Btn khi xem ở breakpoint nhỏ hơn -->
+        <button id="btnMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <!-- Navbar menu -->
+        <div class="collapse navbar-collapse nav__midle d-none d-flex" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../service_page/index.html">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Page <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="../404_page/index.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                <li><a class="dropdown-item" href="#">Elements page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact_page/">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__right d-flex justify-content-between">
+            <!-- Btn search -->
+            <button class="btn__search border-0" id="btnSearch">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+  
+            <!-- make a overlay of btnSearch ****start-->
+            <div id="searchOverlay">
+              <!-- use css to add div overlay for button when visitor click into btnSearch -->
+              <button id="btnCloseOverlaySearch">
+                <img src="./img/close.png" alt="">
+              </button>
+              <form class="form-inline d-flex position-fixed">
+                <input id="inputSearchWidth" class="form-control mr-sm-2" type="search" placeholder="Type content to find something" aria-label="Search">
+                <button class="btn my-2 my-sm-0 m-3" type="submit">Search</button>
+            </form>
+            <!-- make a overlay of btnSearch ****End-->
+            </div>
+            <!-- Btn light & dark mode -->
+            <div>
+              <button class="btn__mode">
+                <i class='bx bx-moon btn__dark active'></i>
+                <i class='bx bx-sun btn__light'></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Btn tìm kiếm và dark,light mode -->
+        
+      </div>
+    </nav>
+
   </header>
-  <main>
+  <!-- Breadcrumb start-->
+  <section class="breadcrumb container-fluid">
+    <div class="breadcrumb__overlay">
+      <img src="../asset/img/b1.jpg" alt="hinh background 1">
+    </div>
+    <div class="breadcrumb__text container-fluid">
+      <h2 class="fs-1 fs-2">Error Page</h2>
+      <p class="fs-1 fs-2 fs-3 fs-4 fs-5 fs-6">Page cannot be found</p>
+    </div>
+  </section>
+  <!-- Breadcrumb ***end***-->
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+
+
+        <article>
+            <section>
+                <div class="error-page py-5">
+                    <div class="container py-lg-5 py-md-4 ">
+                        <div class="main-cover w3 align-items-center">
+                            <div class="row">
+                                <div class="col-md-6 col-9">
+                                    <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/error.svg"
+                                        class="img-fluid" alt="404-img">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="cover-para w3ls">404</h3>
+                                    <h5 class="text-primary-emphasis mt-lg-4 fs-4">Something's Missing</h5>
+                                    <p class="">The page you are looking for was moved, removed, renamed or never
+                                        existed.
+                                    </p>
+                                    <form class="form-inline search-form mt-4"
+                                        action="https://wp.w3layouts.com/corpvision/" method="get">
+                                        <input class="form-control" name="s" type="search" placeholder="Search"
+                                            aria-label="email" required="">
+                                        <button class="btn search" type="submit"><span
+                                                class="fa fa-search"></span></button>
+
+                                    </form>
+                                    <a href="https://wp.w3layouts.com/corpvision/" class="btn back-button mt-md-5 mt-4">
+                                        <i class="fa fa-arrow-left mr-2" aria-hidden="true"></i> Go back to Home
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+<!-- FOOTER START -->
+<footer>
+  <div class="container">
+    <div class="footer_top row text-white">
+      <div class="footer_logo col-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+        <div class="footer_create_logo d-flex align-items-center">
+          <i class="fa-solid fa-align-right"></i>
+          <a href="">
+            <p>Corp Vertion</p>
+            <p>Vision to your future</p>
+          </a>
+        </div>
+        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
+        <div class="logo_social">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer_contact col-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+        <h3>CONTACT INFO</h3>
+        <ul>
+          <li>Address : Corp Vision, 343 marketing, #21 <br> cravel 1st lane street, NY - 62617.
+          </li>
+          <li>Phone Number :
+            <a href="">+1(21) 234 4567</a>
+          </li>
+          <li>Email :
+            <a href="">info@example.com</a>
+          </li>
+          <li>Support :
+            <a href="">info@support.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_cate col-3 col-xl-3 col-lg-3 col-md-5 col-sm-12">
+        <h3>CATEGORIES</h3>
+        <ul>
+          <li><a href="">Marketing Strategy</a></li>
+          <li><a href="">Startup Business</a></li>
+          <li><a href="">Web development</a></li>
+        </ul>
+      </div>
+      <div class="footer_meta col-3 col-xl-3 col-lg-3 col-md-5 col-sm-12">
+        <h3>META</h3>
+        <ul>
+          <li><a href="">Log in</a></li>
+          <li><a href="">Entries feed</a></li>
+          <li><a href="">Comments feed</a></li>
+          <li><a href="">WordPress.org</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- COPY RIGHT -->
+  <section class="copyright">
+    <div class="container">
+      <div class="copyright_content text-center">
+        <p>© 2023 Corp Vision All Rights Reserved | WordPress Theme by <a href="">W3Layouts.</a></p>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- FOOTER END -->
+
+
+
 </body>
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+<script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector(".header.main-header");
+        if (window.scrollY > 100) { // Thay đổi 100 thành khoảng cuộn trang mà bạn muốn để kích hoạt hiệu ứng
+            header.classList.add("scroll");
+        } else {
+            header.classList.remove("scroll");
+        }
+    });
+</script>
+<!-- move top -->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 
 </html>
