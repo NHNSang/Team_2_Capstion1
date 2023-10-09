@@ -1578,7 +1578,7 @@ font-size: 2.5rem;
 /* solution end */
 /* form start */
 .contact{
-    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../asset/img/bg1-scaled.jpg); */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../asset/img/bg1-scaled.jpg);
     background-attachment: fixed;
     padding: 0;
 
