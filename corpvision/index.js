@@ -42,11 +42,15 @@ document.getElementById('btnCloseOverlaySearch').addEventListener('click', funct
 
 
 // Thông báo điền form newsletter
-alert(hello);
-document.getElementById('btnNewletters').onclick = function (){
-    var giaTriEmail = document.getElementById('nhapEmailNewsletter').value;
-    console.log(giaTriEmail);
-    alert(giaTriEmail);
+// alert(hello);
+// document.getElementById('btnNewletters').onclick = function (){
+//     var giaTriEmail = document.getElementById('nhapEmailNewsletter').value;
+//     console.log(giaTriEmail);
+//     alert(giaTriEmail);
     
 
-};
+// }
+
+document.getElementById("anPre").onclick = function () {
+    document.getElementById("anPre").style.display = "none";
+}

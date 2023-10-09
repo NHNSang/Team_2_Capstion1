@@ -1156,7 +1156,7 @@ footer .footer_top .footer_logo .logo_social a i{
     padding-right: 10px;
 }
 footer .footer_top .footer_contact{
-    padding-left: 50px;
+    padding: 0;
 }
 footer .footer_top .footer_contact h3{
     padding: 5px 0px 0px 50px;
@@ -1662,7 +1662,16 @@ section.values {
 }
 /* values end */
 
-
+/* Blog Posts Page */
+.pagination  .page-item .page-link{
+    color: var(--heading-sub-color);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.pagination  .page-item .page-link:hover{
+    background-color: var(--green-color);
+    color: white;
+}
 
 
 /* 404 page */
@@ -2568,6 +2577,9 @@ RIGHT SIDEBAR TOGGLE SECTION
 .new .new_content .new_card .card_content{
     padding-bottom: 20px;
 }
+footer .footer_top .footer_contact{
+    padding-top: 50px !important;
+}
 footer .footer_top .footer_cate, footer .footer_top .footer_meta{
     padding-top: 50px;
 }
@@ -3193,3 +3205,7 @@ ul.navbar-nav {
         right: 60%;
     }
 }
+
+
+/* Responsive for Blog Post 1 */
+/* Make responsive for md 576-767 */
