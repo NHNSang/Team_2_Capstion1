@@ -1,0 +1,1669 @@
+/* GLOBAL CSS */
+:root {
+    /* light theme */
+    --primary-white-background-color: #fff;
+    --secondary-white-background-color: #f8f9fa;
+    /* Dark theme */
+    --primary-dark-background-color: #151421;
+    --secondary-dark-background-color: #100F19;
+    /* color */
+    --white-color: #ffffff;
+    --black-color: #000;
+    --green-color: #009f4d;
+    --hover-green-color: #008030;
+    --border-color: #00a63f;
+    --hover-border-color: #00732c;
+    --body-text-color: #666;
+    --footer-color: #151421;
+    --dark-heading-text-color: #3f3a64;
+    --heading-sub-color: #7e7d7d;
+    --transition-duration: 0.5s;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
+}
+
+/* cài fontsize ,fontweight cho h2,h3,h4 va p */
+/* light mode */
+.heading2__dark {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--dark-heading-text-color);
+    line-height: 45px;
+    text-align: center;
+}
+.heading2__light {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 45px;
+    text-align: center;
+}
+.heading3__dark {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--black-color);
+}
+
+.heading4__dark {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--dark-heading-text-color);
+}
+
+.sub__heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--heading-sub-color);
+    line-height: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+p{
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+/* tạo component button màu xanh chữ trắng ***strart */
+.btn__corp
+{
+    color: var(--white-color);
+    background-color: var(--border-color);
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+    
+}
+.btn__corp#btnCorp:hover {
+    background-color: var(--hover-border-color);
+}
+
+/* tạo component button màu xanh chữ trắng ***end */
+
+
+/* HOME PAGE */
+/* HEADER START */
+/* HEADER start */
+header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+
+}
+header .navbar .nav__left{
+    justify-content: center;
+    align-items: flex-start;
+}
+header .navbar .nav__left h2 {
+    color: var(--black-color);
+    line-height: 0.6;
+
+}
+header .navbar .nav__left h2 {
+    color: var(--white-color);
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+header .navbar .nav__left .nav__brand__icon .fa-align-right {
+    color: var(--border-color);
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    line-height: 0.5;
+}
+header .navbar .nav__left h2 span {
+    font-size:0.875rem;
+    line-height: 17px;
+    color: var(--white-color); 
+}
+/* nav menu, nav midle ===================*/
+#btnMenu .span.navbar-toggler-icon i.fa-solid.fa-bars {
+    color: white;
+}
+header .navbar .nav__midle {
+color: var(--white-color);
+flex-direction: column;
+
+}
+header .navbar .nav__midle .nav-item .nav-link {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin: auto 0.5rem;
+    opacity: 0.8;
+    transition: all 0.5s;
+}header .navbar .nav__midle .nav-item:hover .nav-link {
+    color: #fefefe;
+    opacity: 1;
+}
+/* remove icon arrow down of boostrap */
+.navbar-nav .nav-item.dropdown .nav-link::after {
+    display: none;
+}
+/* add new icon arrow down */
+.navbar-nav .nav-item.dropdown .nav-link .fa-angle-down {
+    font-size: 0.8rem;
+}
+
+/* nav right, search btn, mode btn ============ */
+header .navbar .nav__right {
+    color: var(--white-color);
+}
+header .navbar .nav__right .btn__search{
+    background: var(--green-color);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0;
+    color: var(--white-color);
+    
+}
+/* *** CSS CHO OVERLAY SEARCH **************START */
+/* set position cho form search */
+header .navbar .nav__right #searchOverlay .form-inline {
+    bottom: 20%;
+    right: 30%;
+}
+/* increase the width of input of search  */
+header .navbar .nav__right #searchOverlay .form-inline input.form-control.mr-sm-2#inputSearchWidth {
+    width: 500px;
+}
+/* css button search của overlaySearch */
+header .navbar .nav__right #searchOverlay .form-inline button.btn {
+    /* background: #ffffff; */
+    border: 1px solid #ffffff;
+    color: var(--white-color);
+}
+/* set position cho nút close */
+header .navbar .nav__right #searchOverlay button#btnCloseOverlaySearch img {
+    position: fixed;
+    bottom: 25%;
+    right: 30%;
+}
+/* Css overlay of btnSearch */
+.navbar div#navbarNav{
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul.navbar-nav {
+    flex-basis: 70%;
+    justify-content: center;
+}
+#searchOverlay {
+    /* display: none; */
+    position: fixed;
+    bottom: -20%;
+    left: 12%;
+    width: 1700px;
+    height: 1700px;
+    background: rgb(0, 115, 44, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* *** CSS CHO OVERLAY SEARCH **************END */
+
+header .navbar .nav__right .btn__mode {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
+}
+header .navbar .nav__right .btn__mode .btn__light{
+    display: none;
+}
+/* HEADER END */
+/* CAROUSEL START */
+.carousel {
+    position: relative;
+    padding: 0;
+
+}
+.carousel #carouselExampleDark .carousel-control-prev {
+    position: absolute;
+    top: 100%;
+    left: 86%;
+    margin-right: 0.3rem;
+    z-index: 1001;
+}
+.carousel #carouselExampleDark .carousel-control-next {
+    position: absolute;
+    top: 100%;
+    left: 89%;
+    margin-left: 0.3rem;
+    z-index: 1001;
+}
+/* thay đổi icon btn next prev và tạo border-boxshadow **start*/
+.carousel .carousel-control-prev,.carousel .carousel-control-next{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+/* border: 1px solid #000; */
+box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+color: #000;
+}
+/* thay đổi icon btn next prev và tạo border-boxshadow **end*/
+
+.carousel .carousel-control-prev i.fa-arrow {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transform: translate(3%, 21%);
+    /* z-index: 300; */
+    
+}
+.carousel .carousel-control-prev .fa-arrow-left {
+    color: #000;
+    /* transform: translate(3%, 21%); */
+}
+.carousel .carousel-control-prev .fa-arrow-right {
+    color: #000;
+    transform: translate(3%, 21%);
+}
+
+.carousel .carousel-inner .carousel-item img {
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+    /* filter: grayscale(80%); */
+}
+/* overlay of img carousel */
+
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(29, 42, 55, 0.7);
+    z-index: 2;
+}
+/* caption of carousel */
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption {
+    position: absolute;
+    left: 15%;
+    top: 12%;
+    color: var(--white-color);
+    display: inline-block;
+    text-align: left;
+    width: 40vw;
+    margin-left: 0;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption h2.heading2__light {
+    color: var(--white-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    line-height: 1.5;
+    text-align: left;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption p {
+    font-size:1.2rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #EDEEEF;
+    margin: 2rem auto;
+}
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption .btn__corp:hover {
+    background: var(--hover-green-color);
+}
+/* CAROUSEL END */
+
+
+
+/* Wave start */
+.wave__corp {
+position: relative;
+}
+section .wave
+{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    background: url(../asset/img/wave.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1
+{
+    animation: animate 30s linear 0s infinite;
+    /* animation-delay: 0s;  Có thể viết gọn lên trên */
+    z-index: 1000;
+    opacity: 1;
+    bottom: 80px;
+}
+section .wave.wave2
+{
+    animation: animate2 15s linear -5s infinite;
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 110px;
+}
+section .wave.wave3
+{
+    animation: animate2 15s linear -5s infinite;
+    z-index: 998;
+    opacity: 0.2;
+    bottom: 88px;
+}
+section .wave.wave4
+{
+    animation: animate2 5s linear -5s infinite;
+    z-index: 997;
+    opacity: 0.7;
+    bottom: 97px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+
+}
+/* Wave end */
+
+
+
+/* ABOUT START */
+.about .about_content{9}
+.about .about_content .about_left {
+    flex-basis: 100%;
+}
+.about .about_content .about_left span{
+    color: var(--body-text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.about .about_content .about_left h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;s
+    line-height: 45px;
+    padding-top: 20px;
+}
+.about .about_content .about_left p{
+    color: var(--body-text-color);
+    padding: 20px 0;
+}
+.about .about_content .about_left ul{
+    list-style: none;
+    padding: 0;
+}
+.about .about_content .about_left ul li{
+    padding: 10px 0;
+}
+.about .about_content .about_left ul li a{
+    text-decoration: none;
+}
+.about .about_content .about_left ul li a i{
+    background-color: var(--green-color);
+    color: white;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+.about .about_content .about_left ul li a span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-heading-text-color);
+}
+.about .about_content .about_right{
+    padding: 0 10px;
+    
+}
+.about .about_content .about_right .about_haTrai img{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about .about_content .about_right .about_ha_phai img{
+    border-radius: 15px;
+}
+
+/* CHALLENGES */
+.challenges{
+    background-color: #F7F7F7;
+}
+.challenges .challenges_content{
+    padding: 50px 0;
+}
+.challenges .challenges_content .challenges_left{
+}
+.challenges .challenges_content .challenges_left span{
+    font-size: 0.8rem;
+    color: var(--body-text-color);
+    font-weight: 600;
+}
+.challenges .challenges_content .challenges_left h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.challenges .challenges_content .challenges_left p{
+    font-size: 1rem;
+    color: var(--body-text-color);
+    padding-bottom: 20px;
+}
+.challenges .challenges_content .challenges_left button{
+    border: none;
+    background-color: var(--green-color);
+    height: 50px;
+    width: 180px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.challenges .challenges_content .challenges_left button:hover{
+    background-color: #008030;
+}
+.challenges .challenges_content .challenges_left button a{
+    text-decoration: none;
+    color: white;
+}
+
+.challenges .challenges_content .challenges_right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;  
+    padding-left: 150px;
+    text-align: center;
+}
+.challenges .challenges_content .challenges_right .challenges_icon{
+    background-color: white;
+    width: 300px;
+    transition: all 0.5s;
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+}
+.challenges .challenges_content .challenges_right .challenges_icon:hover{
+    transform: translateY(-0.5rem);
+}
+.challenges .challenges_content .challenges_right .challenges_icon h3 a{
+    text-decoration: none;
+    color: var(--mau-1) ;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+.challenges .challenges_content .challenges_right .challenges_icon h3 a:hover{
+    color: var(--green-color);
+}
+.challenges .challenges_content .challenges_right .challenges_icon .challenges_icon_img{
+    padding-top: 40px;
+}
+/* SERVICE CSS */
+.service .service_content h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 30px 0;
+}
+.service .service_content .service_item {
+    position: relative;
+}
+.service .service_content .service_item img{
+    border-radius: 10px 10px 0px 0px;
+}
+.service .service_content .service_item .service_item_a{
+    background-color: white;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 85px;
+}
+.service .service_content .service_item .service_item_a a{    
+    text-decoration: none;
+    color: var(--mau-1);
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+.service .service_content .service_item .service_item_a a:hover{
+    color: var(--green-color);
+    font-size: 1.3rem;
+}
+.service .service_content .service_item p{
+    color: var(--body-text-color);
+    padding-top: 30px;
+}
+.service .service_content .service_item a{
+    text-decoration: none;
+    color: var(--mau-1);
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+.service .service_content .service_item a:hover{
+    color: var(--green-color);
+}
+/* GALLERY CSS */
+.gallery{
+    background-color: #F8F9FA;
+}
+.gallery .gallery_content p{
+    color: var(--body-text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-top: 30px;
+}
+.gallery .gallery_content h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.gallery .gallery_content .gallery_item{
+    gap: 20px;
+    padding: 30px 0px 50px 0;
+}
+.gallery .gallery_content .gallery_item img{
+    width: 100%;
+
+}
+
+.gallery .gallery_content .gallery_item  .gallery_a{
+    
+    width: 32.3% !important;
+    padding: 0;
+}
+.gallery .gallery_content .gallery_item  .gallery_a .gallery_img{
+    position: relative;
+    overflow: hidden;
+}
+.gallery .gallery_content .gallery_item  .gallery_a .gallery_img img{   
+    transition: all 1s;
+}
+.gallery .gallery_content .gallery_item  .gallery_a .gallery_img:hover img{
+    transform: scale(1.2);
+}
+.gallery .gallery_content .gallery_item .gallery_overlay{
+    background-color: rgb(29 42 55 / 70%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s;
+    text-decoration: none;
+
+}
+.gallery .gallery_content .gallery_item .gallery_overlay:hover{
+    opacity: 1;
+}
+.gallery .gallery_content .gallery_item .gallery_overlay .gallery_overlay_title{
+    height: 100%;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px 20px;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.gallery .gallery_content .gallery_item .gallery_overlay .gallery_overlay_title h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.gallery .gallery_content .gallery_item .gallery_overlay .gallery_overlay_title p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    padding-top: 0;
+}
+.gallery .gallery_content .gallery_item .gallery_overlay:hover .gallery_overlay_title{
+    transform: translateY(-10px);
+}
+.gallery .gallery_content .gallery_item .gallery_a .gallery_img .gallery_overlay a{
+    text-decoration: none;
+}
+.gallery .gallery_content .gallery_bottom{
+    padding: 30px 0;
+    border-top: 1px solid gainsboro;
+}
+.gallery .gallery_content .gallery_bottom .gallery_brand{
+    /* padding: 20px 65px; */
+    border-top: 1px solid var(--border-color-light);
+}
+.gallery .gallery_content .gallery_bottom .gallery_brand img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+/* SUCCESS */
+.service .service_content .service_item{
+    padding: 0 20px;
+}
+.service .service_content .service_item img{
+    width: 100%;
+}
+.success .success_content {
+    padding: 50px 0;
+}
+.success .success_content .success_left img{
+    width: 100%;
+    border-radius: 10px;
+    height: 470px;
+    object-fit: contain;
+}
+.success .success_content .success_right{
+    padding: 10px 20px;
+}
+.success .success_content .success_right p{
+    color: var(--body-text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.success .success_content .success_right h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.success .success_content .success_right .success_progress .progress_content_1 {
+    padding: 20px 0;
+    position: relative;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progess_title span{
+    width: 22%;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar{
+    color: #61fded;
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+    content: "";
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid #61fded;
+    position: absolute;
+    right: 0;
+    transform: translateX(-130px);
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before{
+    content: "";
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #61fded;
+    position: absolute;
+    right: 0;
+    transform: translateX(-125px);
+}
+
+.success .success_content .success_right .success_progress .progress_content_2 {
+    padding: 20px 0;
+    position: relative;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progess_title span{
+    width: 7%;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar{
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::after{
+    content: "";
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid #eece90;
+    position: absolute;
+    right: 0;
+    transform: translateX(-25px);
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::before{
+    content: "";
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #eece90;
+    position: absolute;
+    right: 0;
+    transform: translateX(-20px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 {
+    padding: 20px 0;
+    position: relative;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progess_title span{
+    width: 42%;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar{
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after{
+    content: "";
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid #5c51ff;
+    position: absolute;
+    right: 0;
+    transform: translateX(-240px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
+    content: "";
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #5c51ff;
+    position: absolute;
+    right: 0;
+    transform: translateX(-235px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 {
+    padding: 20px 0;
+    position: relative;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progess_title{
+    padding-bottom: 10px;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progess_title h4{
+    font-size: 1rem;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progess_title span{
+    width: 17%;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress{
+    height: 4px;
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar{
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after{
+    content: "";
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid #e5529a;
+    position: absolute;
+    right: 0;
+    transform: translateX(-95px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before{
+    content: "";
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #e5529a;
+    position: absolute;
+    right: 0;
+    transform: translateX(-90px);
+}
+/* FEEDBACK CSS */
+.feedback{
+    background-color: #F8F9FA;
+}
+.feedback .feedback_content{
+    padding: 50px 0;
+}
+.feedback .feedback_content .feedback_top p{
+    color: var(--body-text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.feedback .feedback_content .feedback_top h2{
+    color: var(--mau-1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.feedback .feedback_content .feedback_bottom .your-class p{
+    color: var(--body-text-color);
+}
+.feedback .feedback_content .feedback_bottom .your-class .feedback_item .feedback_img img{
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+.feedback .feedback_content .feedback_bottom .your-class .feedback_item .feedback_title p:first-child{
+    color: var(--dark-heading-text-color);
+    font-weight: 600;
+}
+.feedback .feedback_content .slick-slider .slick-track, .slick-slider .slick-list{
+    padding: 30px 0;
+}
+.feedback .feedback_content .align-items-center{
+    padding: 20px 0;
+}
+.feedback .feedback_content .feedback_bottom .your-class .feedback_item .feedback_title p:first-child {
+    color: var(--dark-heading-text-color);
+    font-weight: 600;
+    padding: 25px 0px 5px 43px;
+    margin: 0;
+}
+.feedback .feedback_content .feedback_bottom .your-class .feedback_item .feedback_title span{
+    opacity: 0.8;
+}
+.feedback .feedback_content .slick-dots li button:before {
+    font-size: 15px;
+    color: var(--dark-heading-text-color);
+    transition: all 0.5s;
+}
+/* tao hover cho nut slick */
+.feedback .feedback_content .slick-dots li:hover button:before {
+    transform: scale(1.3);
+}
+
+/* NEW CSS */
+.new{
+    background-color: var(--primary-white-background-color);
+}
+.new .new_content{
+    padding: 50px 0;
+}
+.new .new_content p{
+    font-size: 0.8rem;
+    color: var(--body-text-color);
+    font-weight: 600; 
+    text-align: center;
+}
+.new .new_content h2{
+    font-size: 2rem;
+    color: var(--mau-1);
+    font-weight: 700;
+    text-align: center;
+}
+.new .new_content .new_card{
+    padding: 30px 0;
+}
+.new .new_content .new_card .card_content {
+    width: 100%;
+}
+.new .new_content .new_card .card_content .card_top a img{
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+}
+.new .new_content .new_card .card_content .card_top{
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+.new .new_content .new_card .card_content .card_top:hover a img{
+    transform: scale(1.2);
+}
+.new .new_content .new_card .card_content .card_center{
+    padding: 20px;
+
+    /* line-height: 2.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    -webkit-line-clamp: 2; */
+
+}
+.new .new_content .new_card .card_content .card_center p{
+    text-align: left;
+    color: #999;
+}
+.new .new_content .new_card .card_content .card_center a{
+    /* padding-left: 20px; */
+    text-decoration: none;
+    color: var(--mau-1);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.new .new_content .new_card .card_content .card_center a:hover{
+    color: var(--green-color);
+}
+.new .new_content .new_card .card_content .card_bottom{
+    display: flex;
+    padding-left: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+.new .new_content .new_card .card_content .card_layout{
+    padding-right: 100px;
+}
+.new .new_content .new_card .card_content .card_layout span{
+    color: #999;
+    font-weight:600;
+}
+.new .new_content .new_card .card_content .card_layout a{
+    text-decoration: none;
+    color: var(--mau-1);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.new .new_content .new_card .card_content .card_layout a:hover{
+    color: var(--green-color);
+}
+.new .new_content .new_card .card_content .card_time span{
+    color: #999;
+}
+.new .new_content .new_card .card_content{
+    padding: 0 20px;
+}
+.new .new_content .new_card .card_content .card_top img{
+    width: 100%;
+}
+.new .new_content .card_background{
+    background-color: #FEFEFE;
+}
+/* TOGETHER CSS */
+.together{
+    background: url(../asset/img/map.png);
+    background-color: #151421;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid rgba(249, 249, 249, 0.1);
+}
+.together .together_content{
+    padding: 90px 0;
+}
+.together .together_content h2{
+    font-weight: 700;
+}
+.together .together_content p{
+    font-weight: 600;
+    padding: 20px 0;
+}
+.together .together_content form {
+    display: flex;
+    justify-content: center;
+}
+.together .together_content form i{
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
+    height: 50px;
+    line-height: 50px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+.together .together_content form input{
+    padding: 14px 20px;
+    font-size: 16px;
+    border: 1px solid var(--border-color-light);
+    outline: none;
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 0;
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-left: none;
+    height: 50px;
+    width: 450px;
+}
+.together .together_content form  button{
+    padding: 10px;
+    background: var(--green-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 10px 10px 0;
+    transition: all 0.5s;
+}
+.together .together_content form  button:hover{
+    background-color: #00732c;
+}
+/* FOOTER CSS */
+footer{
+    background-color: #151421;
+}
+footer .footer_top{
+    padding: 30px 0px;
+}
+footer .footer_top .footer_logo .footer_create_logo i{
+    font-size: 30px;
+    color: green;
+    padding-bottom: 20px;
+}
+footer .footer_top a{
+    text-decoration: none;
+    color: #97a1a9;
+    transition: all 0.5s;
+}
+footer .footer_top a:hover{
+    color: white;
+}
+footer .footer_top h3{
+    font-weight: 600;
+}
+footer .footer_top ul{
+    list-style: none;
+}
+
+footer .footer_top .footer_logo .footer_create_logo a {
+    color: white;
+    padding-left: 10px;
+}
+footer .footer_top .footer_logo .footer_create_logo a p:first-child{
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+footer .footer_top .footer_logo .footer_create_logo a p:last-child{
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+footer .footer_top .footer_logo p{
+    color: #97a1a9;
+    margin: 20px 0;
+}
+footer .footer_top .footer_logo .logo_social a i{
+    padding-right: 10px;
+}
+footer .footer_top .footer_contact{
+    padding: 0;
+}
+footer .footer_top .footer_contact h3{
+    padding: 5px 0px 0px 50px;
+}
+footer .footer_top .footer_contact ul{
+    padding: 15px 0px 0px 50px;
+}
+footer .footer_top .footer_contact ul li{
+    color: #97a1a9;
+    line-height: 30px;
+}
+footer .footer_top .footer_cate h3{
+    padding: 5px 0px 0px 50px;
+}
+footer .footer_top .footer_cate ul{
+    padding: 10px 0px 0px 50px;
+}
+footer .footer_top .footer_cate ul li{
+    line-height: 30px;
+}
+footer .footer_top .footer_meta h3{
+    padding: 5px 0px 0px 50px;
+}
+footer .footer_top .footer_meta ul{
+    padding: 10px 0px 0px 50px;
+}
+footer .footer_top .footer_meta ul li{
+    line-height: 30px;
+}
+/* COPY RIGHT CSS */
+.copyright{
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+}
+.copyright .copyright_content{
+    padding: 15px 0;
+}
+.copyright .copyright_content p{
+    color:#97a1a9 ;
+}
+.copyright .copyright_content p a{
+    text-decoration: none;
+    color: green;
+    transition: all 0.5s;
+}
+.copyright .copyright_content p a:hover{
+    color: white;
+}
+
+
+/* all your content here */
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.cd-top--fade-out {
+    opacity: .5;
+}
+.cd-top i{
+    background-color: var(--green-color);
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+}
+
+/* List responsive */
+
+/* Responsive for Home page */
+/* Make responsive for xl */
+@media (max-width: 1199.98px){
+    .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption h2.heading2__light{
+        font-size: 2.5rem;
+    }
+    .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption p{
+        font-size: 1rem;
+    }
+    .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+        padding-top: 60px ;
+    }
+    .carousel button.carousel-control-prev{
+        margin-left: -1.7rem;
+    }
+    .about .about_content{
+        padding: 0;
+        transform: translateY(-10px);
+        height: 550px;
+    }
+    .challenges .challenges_content .challenges_right{
+        padding: 55px 32px;
+        width: 50%;
+    }
+    .challenges .challenges_content .challenges_right .challenges_icon{
+        height: 150px;
+        width: 200px;
+    }
+    .service .service_content .service_item .service_item_a {
+        bottom: 110px;
+        left: 50px;
+        width: 65%;
+    
+    }
+    .gallery .gallery_content .gallery_item .gallery_a{
+        width: 31.9% !important;
+    }
+    .service .service_content .service_item .service_item_a a {
+        font-size: 1rem;
+    
+    }
+    .gallery .gallery_content .gallery_bottom .gallery_brand img {
+        height: 80%;
+    }
+    .success .success_content .success_left img{
+        margin-top: 40px;   
+    }
+    .success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+        transform: translateX(-80px)
+    }
+    .success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before{
+        transform: translateX(-75px)
+    }
+    .success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after{
+        transform: translateX(-170px)
+    }
+    .success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
+        transform: translateX(-165px);
+    }
+    .success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after{
+        transform: translateX(-65px)
+    }
+    .success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before{
+        transform: translateX(-60px)
+    }
+    .feedback .feedback_content {
+        padding: 15px;
+    }
+    .new .new_content .new_card .card_content .card_bottom{
+        padding: 0;
+    }
+    .new .new_content .new_card .card_content .card_layout{
+        padding: 0;
+    }
+    footer .footer_top .footer_logo .footer_create_logo a p:first-child {
+        font-size: 1.5rem;
+    }
+    footer .footer_top .footer_logo{
+        padding: 0;
+    }
+    footer .footer_top .footer_contact{
+        padding: 0;
+    }
+    footer .footer_top .footer_cate{
+        padding: 0;
+    }
+    footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, footer .footer_top .footer_meta h3 {
+        font-size: 1.3rem;
+        padding-left: 30px;
+    }footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul {
+        padding: 15px 0px 0px 30px;
+    }
+    .together .together_content form button{
+        padding: 0 15px;
+    }
+    }
+/* Make responsive for lg 768-881*/
+@media (max-width: 991.98px){
+
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+    margin: 0;
+    width: 60%;
+}
+.about .about_content{
+    flex-direction: column;
+    min-height: 90vh;
+}
+.about .about_content .about_right{
+    padding:20px;
+    width: 100%;
+}
+.challenges .challenges_content{
+    flex-direction: column;
+    min-height: 75vh;
+}
+.challenges .challenges_content .challenges_right{
+    width: 100%;
+    padding: 0;
+    padding-top: 60px;
+}
+.challenges .challenges_content .challenges_right .challenges_icon{
+    width: 100%;
+}
+.service .service_content .service_card{
+    flex-direction: column;
+}
+.service .service_content .service_item{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.service .service_content .service_item .service_item_a{
+    left: 80px;
+    bottom: 88px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+    transform: translateX(-130px)
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before{
+    transform: translateX(-125px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after{
+    transform: translateX(-270px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before{
+    transform: translateX(-265px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after{
+    transform: translateX(-95px)
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before{
+    transform: translateX(-90px)
+}
+.new .new_content .new_card{
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.new .new_content .new_card .card_content{
+    padding-bottom: 20px;
+}
+footer .footer_top .footer_contact{
+    padding-top: 50px !important;
+}
+footer .footer_top .footer_cate, footer .footer_top .footer_meta{
+    padding-top: 50px;
+}
+footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, footer .footer_top .footer_meta h3{
+    padding: 0;
+}
+footer .footer_top .footer_contact ul, footer .footer_top .footer_cate ul, footer .footer_top .footer_meta ul{
+    padding: 0;
+}
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 31.4% !important;
+}
+footer .footer_top .footer_contact {
+    padding: 0;
+}
+}
+/* Make responsive for md 576-767*/
+@media (max-width: 767.98px){   
+.carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
+        width: 80%!important;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        left: 10%;
+}
+carousel-item .carousel-caption{
+    width: 30%;
+}
+
+.about .about_content{
+    min-height: 80vh;
+}
+.service .service_content .service_item{
+    width: 100%;
+}
+.service .service_content .service_item .service_item_a{
+    left: 75px;
+    bottom: 115px;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after{
+    transform: translateX(-95px);
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before {
+    transform: translateX(-90px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after {
+    transform: translateX(-200px)
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before {
+    transform: translateX(-195px)
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after {
+    transform: translateX(-70px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before {
+    transform: translateX(-65px);
+}
+footer .footer_top .footer_contact{
+    padding-top: 50px;
+}
+footer .footer_top .footer_cate{
+    width: 50%;
+}   
+footer .footer_top .footer_meta {
+    width: 50%;
+}
+.gallery .gallery_content .gallery_item .gallery_a{
+    width: 48%;
+}
+.gallery .gallery_content .gallery_bottom .gallery_brand{
+    width: 33.33%;
+}
+.success .success_content .success_left img{
+    margin: 0;
+}
+.new .new_content .new_card .card_content .card_center{ 
+}
+.new .new_content .new_card .card_content .card_center p{
+    background-color: var(--green-color);
+    color: white;
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+}
+.new .new_content .new_card .card_content .card_center a{
+    display: inline-block;
+}
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 30.8% !important;
+}
+#right-sidebar{
+    width: 60px;
+}
+.pull-right-demo-bar{
+    width: 60px;
+}
+.w3l-text{
+    font-size: 0.7rem;
+}
+}
+/* Make responsive for sm */
+@media (max-width: 575.98px){
+.carousel #carouselExampleDark .carousel-control-next{
+    left: 86%;
+}
+.carousel #carouselExampleDark .carousel-control-prev{
+    left: 81%;
+}   
+.success .success_content .success_left{
+    width: 100%;
+}
+.success .success_content .success_right{
+    width: 100%;
+}
+footer .footer_top .footer_logo{
+    width: 100%;
+}
+footer .footer_top .footer_contact{
+    width: 100%;
+}
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 100% !important;
+}
+footer .footer_top {
+    padding: 30px 20px;
+}
+}
+/* Make responsive for ip XR 414*/
+@media (max-width: 414.98px){
+h2{
+    font-size: 1.8rem !important;
+}
+p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0 !important;
+}
+.carousel .heading2__light{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.about .about_content {
+    min-height: 68vh;
+}
+.about .about_content .about_right{
+    padding: 0 !important;
+}
+.about .about_content .about_right .about_haTrai{
+    padding: 0 !important;
+}
+.about .about_content .about_right .about_haTrai img{
+    height: 90%;
+}
+.gallery .gallery_content .gallery_item .gallery_a{
+    width: 100% !important;
+}
+.success .success_content .success_left{
+    padding: 0;
+}
+.success .success_content .success_left img{
+    height: auto;
+}
+.new .new_content .new_card .card_content{
+    padding: 0;
+}
+.new .new_content .new_card{
+    margin: 0 ;
+}
+.service .service_content .service_item p{
+    margin-top: 30px;
+}
+.service .service_content .service_item .service_item_a {
+    left: 48px;
+    top: 50%;
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::before {
+    transform: translateX(-60px);
+}
+.success .success_content .success_right .success_progress .progress_content_1 .progress .progress-bar::after {
+    transform: translateX(-65px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after {
+    transform: translateX(-140px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before {
+    transform: translateX(-135px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::after {
+    transform: translateX(-50px);
+}
+.success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before {
+    transform: translateX(-45px);
+}
+footer .footer_top{
+    padding: 15px 15px;
+}
+}
+/* Make responsive for iphone 12promax 390.98px */
+@media (max-width: 390.98px){
+    .about .about_content {
+        min-height: 67vh;
+    }
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 46.8%;
+    font-size: 0.9rem !important;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::after {
+    transform: translateX(-15px);
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::before{
+    transform: translateX(-10px);
+}
+.service .service_content .service_item .service_item_a a{
+    font-size: 0.8rem!important;
+}
+}
+/* Make responsive for iphone SE 375px */
+@media (max-width: 375.98px) {
+.about .about_content {
+    min-height: 65vh;
+}
+.gallery .gallery_content .gallery_item .gallery_a {
+    width: 47%;
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::after{
+    transform: translateX(-10px);
+}
+.success .success_content .success_right .success_progress .progress_content_2 .progress .progress-bar::before{
+    transform: translateX(-5px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::after {
+    transform: translateX(-130px);
+}
+.success .success_content .success_right .success_progress .progress_content_3 .progress .progress-bar::before {
+    transform: translateX(-125px);
+}
+.service .service_content .service_item .service_item_a{
+    left: 33px;
+    width: 75%;
+}
+
+}
+/* Make responsive for SS S8+ 360px */
+@media (max-width: 360.98px){
+    .about .about_content {
+        min-height: 72vh;
+    }
+    .service .service_content .service_item .service_item_a {
+        left: 28px;
+    }
+}
+
+
+
+
+

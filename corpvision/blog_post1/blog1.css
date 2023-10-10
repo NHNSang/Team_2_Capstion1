@@ -1,0 +1,620 @@
+/* GLOBAL CSS ABOUTUS */ 
+
+/* declare for entire of website */
+:root {
+    /* light theme */
+    --primary-white-background-color: #fff;
+    --secondary-white-background-color: #f8f9fa;
+    /* Dark theme */
+    --primary-dark-background-color: #151421;
+    --secondary-dark-background-color: #100F19;
+    /* color */
+    --white-color: #ffffff;
+    --black-color: #000;
+    --green-color: #009f4d;
+    --hover-green-color: #008030;
+    --border-color: #00a63f;
+    --hover-border-color: #00732c;
+    --body-text-color: #666;
+    --footer-color: #151421;
+    --dark-heading-text-color: #3f3a64;
+    --heading-sub-color: #7e7d7d;
+    --transition-duration: 0.5s;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,
+body {
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    /* ẩn thanh cuộn ngang */
+    overflow-x: hidden;
+}
+section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;   
+}
+
+/* cài fontsize ,fontweight cho h2,h3,h4 va p */
+/* light mode */
+.heading2__dark {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--dark-heading-text-color);
+    line-height: 45px;
+    text-align: center;
+}
+.heading2__light {
+    font-size: 2.1875rem;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 45px;
+    text-align: center;
+}
+
+.heading3__dark {
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--black-color);
+}
+
+.heading4__dark {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--dark-heading-text-color);
+}
+
+.sub__heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--heading-sub-color);
+    line-height: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+p{
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--body-text-color);
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+/* tạo component button màu xanh chữ trắng ***strart */
+.btn__corp
+{
+    color: var(--white-color);
+    background-color: var(--border-color);
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    
+}
+.btn__corp#btnCorp:hover {
+    background-color: var(--hover-border-color);
+}
+
+/* tạo component button màu xanh chữ trắng ***end */
+
+/* declare for entire of website */
+
+
+
+
+
+/* HEADER start */
+header {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+
+}
+header .navbar .nav__left{
+    justify-content: center;
+    align-items: flex-start;
+}
+header .navbar .nav__left h2 {
+    color: var(--black-color);
+    line-height: 0.6;
+
+}
+header .navbar .nav__left h2 {
+    color: var(--white-color);
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+}
+header .navbar .nav__left .nav__brand__icon .fa-align-right {
+    color: var(--border-color);
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    line-height: 0.5;
+}
+header .navbar .nav__left h2 span {
+    font-size:0.875rem;
+    line-height: 17px;
+    color: var(--white-color); 
+}
+/* nav menu, nav midle ===================*/
+#btnMenu .span.navbar-toggler-icon i.fa-solid.fa-bars {
+    color: white;
+}
+header .navbar .nav__midle {
+color: var(--white-color);
+flex-direction: column;
+
+}
+header .navbar .nav__midle .nav-item .nav-link {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    margin: auto 0.5rem;
+    opacity: 0.8;
+    transition: all 0.5s;
+}header .navbar .nav__midle .nav-item:hover .nav-link {
+    color: #fefefe;
+    opacity: 1;
+}
+/* remove icon arrow down of boostrap */
+.navbar-nav .nav-item.dropdown .nav-link::after {
+    display: none;
+}
+/* add new icon arrow down */
+.navbar-nav .nav-item.dropdown .nav-link .fa-angle-down {
+    font-size: 0.8rem;
+}
+
+/* nav right, search btn, mode btn ============ */
+header .navbar .nav__right {
+    color: var(--white-color);
+}
+header .navbar .nav__right .btn__search{
+    background: var(--green-color);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0;
+    color: var(--white-color);
+    
+}
+/* *** CSS CHO OVERLAY SEARCH **************START */
+/* set position cho form search */
+header .navbar .nav__right #searchOverlay .form-inline {
+    bottom: 20%;
+    right: 30%;
+}
+/* increase the width of input of search  */
+header .navbar .nav__right #searchOverlay .form-inline input.form-control.mr-sm-2#inputSearchWidth {
+    width: 500px;
+}
+/* css button search của overlaySearch */
+header .navbar .nav__right #searchOverlay .form-inline button.btn {
+    /* background: #ffffff; */
+    border: 1px solid #ffffff;
+    color: var(--white-color);
+}
+/* set position cho nút close */
+header .navbar .nav__right #searchOverlay button#btnCloseOverlaySearch img {
+    position: fixed;
+    bottom: 25%;
+    right: 30%;
+}
+/* Css overlay of btnSearch */
+.navbar div#navbarNav{
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul.navbar-nav {
+    flex-basis: 70%;
+    justify-content: center;
+}
+#searchOverlay {
+    /* display: none; */
+    position: fixed;
+    bottom: -20%;
+    left: 12%;
+    width: 1700px;
+    height: 1700px;
+    background: rgb(0, 115, 44, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* *** CSS CHO OVERLAY SEARCH **************END */
+
+header .navbar .nav__right .btn__mode {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
+}
+header .navbar .nav__right .btn__mode .btn__light{
+    display: none;
+}
+/* HEADER END */
+/* BREADCRUMB Start */
+.breadcrumb {
+    margin-bottom: 0;
+}
+.breadcrumb__overlay {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.breadcrumb__overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.breadcrumb__overlay::after {
+    content: "";
+    background: rgba(37, 44, 59, 0.7);
+    width: 100%;
+    height: 400px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.breadcrumb__text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    height: 400px;
+    color: var(--white-color);
+}
+.breadcrumb__text h2 {
+    color: var(--white-color);
+    size: 50px;
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.breadcrumb__text p {
+    color: #fff;
+    font-size: 1.25rem;
+}
+/* Breadcrumb end */
+/* NEW CSS */
+.new{
+    background-color: var(--primary-white-background-color);
+}
+.new .new_content{
+    padding: 50px 0;
+}
+.new .new_content p{
+    font-size: 0.8rem;
+    color: var(--body-text-color);
+    font-weight: 600; 
+    text-align: center;
+}
+.new .new_content h2{
+    font-size: 2rem;
+    color: var(--mau-1);
+    font-weight: 700;
+    text-align: center;
+}
+.new .new_content .new_card{
+    padding: 30px 0;
+}
+.new .new_content .new_card .card_content {
+    width: 100%;
+}
+.new .new_content .new_card .card_content .card_top a img{
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+}
+.new .new_content .new_card .card_content .card_top{
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+.new .new_content .new_card .card_content .card_top:hover a img{
+    transform: scale(1.2);
+}
+.new .new_content .new_card .card_content .card_center{
+    padding: 20px;
+
+    /* line-height: 2.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    -webkit-line-clamp: 2; */
+
+}
+.new .new_content .new_card .card_content .card_center p{
+    text-align: left;
+    color: #999;
+}
+.new .new_content .new_card .card_content .card_center a{
+    /* padding-left: 20px; */
+    text-decoration: none;
+    color: var(--mau-1);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.new .new_content .new_card .card_content .card_center a:hover{
+    color: var(--green-color);
+}
+.new .new_content .new_card .card_content .card_bottom{
+    display: flex;
+    padding-left: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+.new .new_content .new_card .card_content .card_layout{
+    padding-right: 100px;
+}
+.new .new_content .new_card .card_content .card_layout span{
+    color: #999;
+    font-weight:600;
+}
+.new .new_content .new_card .card_content .card_layout a{
+    text-decoration: none;
+    color: var(--mau-1);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.new .new_content .new_card .card_content .card_layout a:hover{
+    color: var(--green-color);
+}
+.new .new_content .new_card .card_content .card_time span{
+    color: #999;
+}
+.new .new_content .new_card .card_content{
+    padding: 0 20px;
+}
+.new .new_content .new_card .card_content .card_top img{
+    width: 100%;
+}
+.new .new_content .card_background{
+    background-color: #FEFEFE;
+}
+
+
+/* FOOTER CSS */
+footer{
+    background-color: #151421;
+}
+footer .footer_top{
+    padding: 30px 0px;
+    gap: 60px;
+}
+footer .footer_top .footer_logo{
+    padding: 0;
+}
+footer .footer_top .footer_logo .footer_create_logo i{
+    font-size: 30px;
+    color: green;
+    padding-bottom: 20px;
+}
+footer .footer_top a{
+    text-decoration: none;
+    color: #97a1a9;
+    transition: all 0.5s;
+}
+footer .footer_top a:hover{
+    color: white;
+}
+footer .footer_top h3{
+    font-weight: 600;
+}
+footer .footer_top ul{
+    list-style: none;
+}
+
+footer .footer_top .footer_logo .footer_create_logo a {
+    color: white;
+    padding-left: 10px;
+}
+footer .footer_top .footer_logo .footer_create_logo a p:first-child{
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+footer .footer_top .footer_logo .footer_create_logo a p:last-child{
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+footer .footer_top .footer_logo p{
+    color: #97a1a9;
+    margin: 20px 0;
+}
+footer .footer_top .footer_logo .logo_social a i{
+    padding-right: 10px;
+}
+footer .footer_top .footer_contact{
+    padding: 0;
+}
+footer .footer_top .footer_contact h3{
+    /* padding: 5px 0px 0px 50px; */
+}
+footer .footer_top .footer_contact ul{
+    /* padding: 15px 0px 0px 50px; */
+    padding: 0;
+}
+footer .footer_top .footer_contact ul li{
+    color: #97a1a9;
+    line-height: 30px;
+}
+footer .footer_top .footer_cate{
+    padding: 0;
+}
+footer .footer_top .footer_cate h3{
+    /* padding: 5px 0px 0px 50px; */
+}
+footer .footer_top .footer_cate ul{
+    /* padding: 10px 0px 0px 50px; */
+    padding: 0;
+}
+footer .footer_top .footer_cate ul li{
+    line-height: 30px;
+}
+footer .footer_top .footer_meta h3{
+    /* padding: 5px 0px 0px 50px; */
+}
+footer .footer_top .footer_meta ul{
+    /* padding: 10px 0px 0px 50px; */
+    padding: 0;
+}
+footer .footer_top .footer_meta ul li{
+    line-height: 30px;
+}
+
+/* COPY RIGHT CSS */
+.copyright{
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
+    background-color: #151421;
+}
+.copyright .copyright_content{
+    padding: 15px 0;
+}
+.copyright .copyright_content p{
+    color:#97a1a9 ;
+}
+.copyright .copyright_content p a{
+    text-decoration: none;
+    color: green;
+}
+
+
+/* all your content here */
+/* back to top start */
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.cd-top--fade-out {
+    opacity: .5;
+}
+.cd-top i{
+    background-color: var(--green-color);
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+}
+/* Footer end */
+@media (min-width: 1200px){
+    .col-xl-3 {
+        width: 21.5%;
+    }
+}
+@media (max-width: 1199.98px) {
+    footer .footer_top {
+        padding: 30px 0px;
+        gap: 45px;
+    }
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 20.3%;
+    }
+    footer .footer_top .footer_logo .footer_create_logo a p:first-child{
+        font-size: 1.6rem;
+    }
+    footer .footer_top .footer_contact h3,footer .footer_top .footer_cate h3,footer .footer_top .footer_meta h3{
+        font-size: 1.6rem;
+    }
+    
+    }
+    @media (max-width: 991.98px){
+    footer .footer_top .footer_logo {
+        width: 40%;
+    }
+    footer .footer_top .footer_contact {
+        width: 100%;
+    }
+    footer .footer_top .footer_cate{
+        width: 46%;
+    }
+    }
+    @media (max-width: 767.98px){
+        .new .new_content .new_card .card_content{
+            width: 33%;
+        }
+        }
+    @media (max-width: 575.98px ){
+        p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding: 0 !important;
+    }
+      header .navbar .nav__left .nav__brand__icon .fa-align-right {
+            font-size: 1.5rem;
+        } 
+        .breadcrumb__text.container-fluid {
+            justify-content: flex-end;
+        }
+        header .navbar .nav__left h2 {
+            font-size: 1.2rem;
+        }
+        .breadcrumb.container-fluid {
+            height: 200px;
+        } 
+        .breadcrumb__overlay {
+            height: 100%;
+    
+        }
+        .breadcrumb__overlay::after {
+            height: 200px;
+        }
+        .breadcrumb__text.container-fluid {
+            height: 200px;
+        }
+     footer .footer_top {
+            padding: 30px 20px;
+        }
+    footer .footer_top .footer_logo {
+                width: 60%;
+            }
+        }
+    @media (max-width:414.98px) {
+        h2{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            padding: 0 !important;
+        }
+    }
