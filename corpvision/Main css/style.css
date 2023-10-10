@@ -1553,7 +1553,7 @@ p{
     overflow: hidden;
 }
 .about .about_content {
-    min-height: 68vh;
+    min-height: 78vh;
 }
 .about .about_content .about_right{
     padding: 0 !important;
@@ -1611,7 +1611,7 @@ footer .footer_top{
 /* Make responsive for iphone 12promax 390.98px */
 @media (max-width: 390.98px){
     .about .about_content {
-        min-height: 67vh;
+        min-height: 77vh;
     }
 .gallery .gallery_content .gallery_item .gallery_a {
     width: 46.8%;
@@ -1630,7 +1630,7 @@ footer .footer_top{
 /* Make responsive for iphone SE 375px */
 @media (max-width: 375.98px) {
 .about .about_content {
-    min-height: 65vh;
+    min-height: 103vh;
 }
 .gallery .gallery_content .gallery_item .gallery_a {
     width: 47%;
@@ -1656,7 +1656,7 @@ footer .footer_top{
 /* Make responsive for SS S8+ 360px */
 @media (max-width: 360.98px){
     .about .about_content {
-        min-height: 72vh;
+        min-height: 95vh;
     }
     .service .service_content .service_item .service_item_a {
         left: 28px;
