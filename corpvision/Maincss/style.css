@@ -116,6 +116,9 @@ header{
     z-index: 100;
 
 }
+header .navbar .container {
+    align-items: flex-start;
+}
 header .navbar .nav__left{
     justify-content: center;
     align-items: flex-start;
