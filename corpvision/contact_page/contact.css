@@ -586,9 +586,19 @@ footer .footer_top .footer_meta ul li{
     }
     /* Make responsive for lg 768-991*/
     @media (max-width: 991.98px){
+        i.fa-solid.fa-bars {
+            color: white;
+        }
+    span.navbar-toggler-icon {
+            display: inline !important;
+        }
+        button#btnMenu {
+            border: 1px solid white !important;
+        }
     .carousel_contactUs .contactUs_title h2{
         font-size: 3.5rem;
-    }.carousel_contactUs .contactUs_title p {
+    }
+    .carousel_contactUs .contactUs_title p {
         font-size: 1.2rem;
     }
     .agency .agency_content .agency_contact .agency_contact_total{

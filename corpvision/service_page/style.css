@@ -1,4 +1,4 @@
-/* GLOBAL CSS ABOUTUS */ 
+/* GLOBAL CSS Services */ 
 
 /* declare for entire of website */
 :root {
@@ -685,6 +685,13 @@ footer .footer_top .footer_contact h3,footer .footer_top .footer_cate h3,footer 
     a.navbar-brand.nav__left.d-flex {
         padding-top: 1rem;
     }
+    span.navbar-toggler-icon {
+        display: inline !important;
+    }
+    #btnMenu .navbar-toggler-icon i.fa-solid.fa-bars {
+    
+        font-size: 1rem;
+    }
     .services .services__content .services__bot .row .col__item {
         width: 100%;   
     }
@@ -731,11 +738,14 @@ footer .footer_top .footer_contact h3,footer .footer_top .footer_cate h3,footer 
     /* tùy biến cho nút dropdown menu */
     #btnMenu {
         /* border: 2px solid rgb(255, 255, 255, 0.5); */
-        position: absolute;
+        /* position: absolute;
         top: 20%;
         right: 6%;
         background: var(--border-color);
-        outline: none !important;
+        outline: none !important; */
+        border: 1px solid #fff !important;
+    height: 30px;
+    width: auto;
     }
     #btnMenu:focus{
         border: none;
@@ -743,7 +753,7 @@ footer .footer_top .footer_contact h3,footer .footer_top .footer_cate h3,footer 
 
 #btnMenu .navbar-toggler-icon i.fa-solid.fa-bars {
     color: rgb(255, 255, 255, 1);
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 /* background cho content của menu dropdown */
 div#navbarNav {
@@ -843,7 +853,10 @@ footer .footer_top .footer_cate{
         padding-top: 1rem;
     }
     .services .services__content .services__top {
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
+    }
+    section.services.container-fluid.pt-5.pb-5 {
+        padding-bottom: 0 !importants;
     }
     .services .services__content .services__bot .row .col__item .col__services__item__pic {
         height: 100%;
@@ -868,6 +881,7 @@ footer .footer_top .footer_cate{
         width: 90%;
         margin: 10px auto;
         padding-bottom: 0 !important;
+        flex-direction: column;
         
     }
     .solution .solution__content .col__item .solution__cate__item__icon {
@@ -887,6 +901,12 @@ footer .footer_top .footer_cate{
     section.contact.container-fluid {
         padding-bottom: 0 !important;
     }
+    .contact .contact__content .col__item.col__left .col__item__info__text p {
+        font-size: 1rem;
+    }
+    .contact .contact__content .col__item.col__left .col__item__info__text p:nth-of-type(1) {
+        font-size: 1rem !important;
+    }   
     .contact .contact__content .col__left h2.heading2__light {
         font-size: 1.8rem !important;
         text-align: center !important;
@@ -955,6 +975,9 @@ footer .footer_top .footer_cate{
         font-size: 1rem;
         margin-left: 1.2rem;
     }
+    footer .footer_top .footer_contact h3, footer .footer_top .footer_cate h3, footer .footer_top .footer_meta h3 {
+        font-size: 1rem;
+    }
     #btnMenu .navbar-toggler-icon i.fa-solid.fa-bars {
         font-size: 1.5rem;
     }
@@ -962,8 +985,11 @@ footer .footer_top .footer_cate{
         width: 1em;
         height: 1em;
         vertical-align:inherit;
+        display: inline !important;
     }
-
+    #btnMenu .navbar-toggler-icon i.fa-solid.fa-bars {
+        font-size: 1rem;
+    }
 
     /* position overlay search button */
     #searchOverlay form.form-inline.d-flex.position-fixed {
@@ -976,5 +1002,14 @@ footer .footer_top .footer_cate{
     .mb-4{
         width: 80%;
     margin: 0 auto;
+}
+.footer_meta.col-3.col-xl-3.col-lg-3.col-md-5.col-sm-12 {
+    width: 38.3%;
+}
+footer .footer_top .footer_logo {
+    width: 100%;
+}
+.footer_meta.col-3.col-xl-3.col-lg-3.col-md-5.col-sm-12 {
+    padding: 0;
 }
 }   

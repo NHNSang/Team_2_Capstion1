@@ -1335,7 +1335,15 @@ footer .footer_top .footer_meta ul li{
     }
 /* Make responsive for lg 768-881*/
 @media (max-width: 991.98px){
-
+    i.fa-solid.fa-bars {
+        color: white;
+    }
+span.navbar-toggler-icon {
+        display: inline !important;
+    }
+    button#btnMenu {
+        border: 1px solid white !important;
+    }
 .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
     margin: 0;
     width: 60%;
@@ -1603,6 +1611,18 @@ p{
 }
 .success .success_content .success_right .success_progress .progress_content_4 .progress .progress-bar::before {
     transform: translateX(-45px);
+}
+.new .new_content .new_card .card_content .card_center p {
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 5px !important;
+    margin-bottom: -0.1rem !important;
+}
+.new .new_content .new_card .card_content .card_center {
+    padding: 9px;
+    
+}
+.new .new_content .new_card .card_content .card_center a {
+    display: block !important;
 }
 footer .footer_top{
     padding: 15px 15px;
