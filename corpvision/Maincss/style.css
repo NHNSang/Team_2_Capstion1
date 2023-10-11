@@ -1344,6 +1344,13 @@ span.navbar-toggler-icon {
     button#btnMenu {
         border: 1px solid white !important;
     }
+    .navbar div#navbarNav {
+        background: #000;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: space-around;
+    }
 .carousel .carousel-inner .carousel-item .carousel__overlay__pic .carousel-caption{
     margin: 0;
     width: 60%;
