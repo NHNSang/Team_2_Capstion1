@@ -1027,12 +1027,8 @@ section .wave.wave4
     justify-content: space-between;
     align-items: center;
 }
-.new .new_content .new_card .card_content .card_bottom a img{
-    width: 50%;
-}
 .new .new_content .new_card .card_content .card_layout{
-    /* padding-right: 100px; */
-    width: 100%;
+    padding-right: 100px;
 }
 .new .new_content .new_card .card_content .card_layout span{
     color: #999;
@@ -1046,9 +1042,6 @@ section .wave.wave4
 }
 .new .new_content .new_card .card_content .card_layout a:hover{
     color: var(--green-color);
-}
-.new .new_content .new_card .card_content .card_time{
-    width: 50%;
 }
 .new .new_content .new_card .card_content .card_time span{
     color: #999;
@@ -1245,6 +1238,413 @@ footer .footer_top .footer_meta ul li{
     right: 1%;
 }
 
+/* About Our Company * start */
+
+/* css cho button video */
+.btn__video {
+    border: 1px solid var(--border-color);
+    background: white;
+    font-size: 1.5rem;
+    color: var(--border-color);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 1.5rem;
+}
+
+/* tao khung hinh elip cho hinh anh */
+/* .about__company {
+    position: relative;
+} */
+.about__company .row.row__about__top {
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+.about__company .col__left {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    margin-right: 1.5rem;
+}
+.about__company .col__left .col__left__content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.about__company .col__left img {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    top: 0;
+    z-index: 2;
+}
+/* tao background hinh elip phia sau hinh anh */
+.about__company .col__left .background__elip {
+    background-color: var(--border-color);
+    opacity: 0.5;
+    width: 100%;
+    height: 85%;
+    border-radius: 37% 91% 60% 22%/27% 139% 47% 92%;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+/* tao background col__left__tile */
+.about__company .col__left .col__left__title {
+    position: absolute;
+    bottom: -4%;
+    right: 11%;
+    height: 200px;
+    width: 200px;
+    transform: rotate(45deg);
+    background-color: var(--green-color);
+    border-radius: 15px;
+    box-shadow: 40px 19px 20px 30px rgb(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.about__company .col__left .col__left__title span {
+    color: var(--white-color);
+    font-size: 3.125rem;
+    font-weight: 600;
+    line-height: 40px;
+
+}
+.about__company .col__left .col__left__title .d-flex p {
+    color: var(--primary-white-background-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.about__company .col__left .col__left__title .d-flex {
+    transform: rotate(-45deg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: -2rem;
+}
+.about__company .heading4__dark {
+    margin: 1rem auto;
+
+}
+.about__company {
+    margin-bottom: 10rem auto;
+    padding: 2rem;
+}
+.about__company .col__right {
+    width: 45%;
+    margin-left: 1.5rem;
+}
+.about__company .col__right .heading2__dark {
+    text-align: left;
+    margin: 1rem auto;
+}
+.about__company .col__right .btn__flex1 .btn__corp#btnCorp:hover {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    color: var(--green-color);
+}
+.about__company .col__right a.btn__video {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+.about__company .col__right a.btn__video:hover {
+    color: var(--green-color);
+    transform: translateY(-15%);
+}
+
+/* value__company */
+.value__company {
+    margin: 15rem auto;
+    margin-bottom: 0;
+}
+.value__company .col__item {
+    background-color: #F8F9FA;
+    width: calc(33.33% - 2rem);
+    margin: auto 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    overflow: hidden;
+    
+}
+.value__company .col__item i {
+    color: var(--green-color);
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    box-shadow: 0 10px 20px 0 rgb(0, 0, 0, 0.3);
+    border: none;
+}
+.value__company .col__item .col__item__text h3 {
+    white-space: nowrap;
+}
+/* use webkit to litmited the length of paragragh to display under 3 line */
+.value__company .col__item .col__item__text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* number ***start*** */
+.number.container-fluid {
+    background: #F8F9FA;
+}
+.number__corp{
+    padding: 7rem;
+}
+.number__corp .col__left__top .heading2__dark {
+    margin: 2rem auto;
+    text-align: left;
+}
+.number__corp .col__left__bot p:nth-child(1) {
+    color: var(--green-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.number__corp .col__left__bot {
+    margin-top: 5rem;
+}
+.number__corp .col__left__bot p:nth-of-type(2){
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* number/ col right */
+.number__corp .col__right__pic {
+    margin-right: 2rem;
+}
+.number__corp .col__right__pic img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* number ***end*** */
+
+
+/* solution **start*** */
+
+.solution {
+    background: linear-gradient(rgba(39, 39, 48, 0.7),rgba(54, 54, 54, 0.7)), url(../asset/img/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+.solution .solution__content {
+    text-align: center;
+    color: var(--primary-white-background-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.solution .solution__content p {
+    color: var(--primary-white-background-color);
+}
+/* btn Video: to make btn to press for wactching video and to create a background for displaying */
+.solution__content .btn__video.btn2 {
+    background-color: transparent;
+    border:2px solid #ffffff;
+}
+.solution__content .btn__video.btn2 .bx-right-arrow{
+    color:#ffffff;
+    cursor: pointer;
+}
+    /* add effect bgVideo */
+
+
+s
+/* solution ***end*** */
+
+/* <!-- Meet the team ***start***--> */
+section.meet__team {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+.meet__team__content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.meet__team__content .meet__team__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.meet__team__content .meet__team__bot .row{
+    gap: 10px;
+}
+.meet__team__content .meet__team__bot .col__team__item {
+    /* margin: auto 1rem; */
+    width: calc(25% - 10px);
+}
+.meet__team__content .meet__team__bot .row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* tạo lớp mờ overlay cho img */
+.meet__team__bot .col__team__item__pic {
+    position: relative;
+    overflow: hidden;
+}
+.meet__team__bot .col__team__item__pic .col__team__item__overlay {
+    background-color: rgb(63, 58, 100, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: var(--primary-white-background-color);
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.meet__team__bot .col__team__item__pic .col__team__item__overlay:hover {
+    opacity: 1;
+}
+.meet__team__bot .col__team__item__pic .col__team__item__overlay p {
+    color: var(--primary-white-background-color);
+}
+.col__team__overlay__content {
+    transform: translateY(200%);
+    transition: all 0.5s;
+}
+.col__team__item__pic .col__team__item__overlay:hover .col__team__overlay__content{
+    transform: translateY(0);
+}
+.col__team__item__pic .col__team__item__overlay:hover{
+    border-radius: 10px;
+}
+/* tạo border và hover cho icon social */
+.meet__team__bot .social__overlay i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.meet__team__bot .social__overlay i:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+/* team member */
+.meet__team__bot .col__team__item .col__team__member {
+    text-align: center;
+}
+.meet__team__bot .col__team__item .col__team__member p {
+    color: var(--black-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.meet__team__bot .col__team__item .col__team__member p span {
+    color: var(--body-text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+/* <!-- Meet the team ***end***--> */
+
+/* why choose us ***start */
+.choose__us {
+    background-color:#F7F7F7 ;
+    padding: 2rem;
+}
+.choose__us .choose__us__top {
+    text-align: center;
+}
+
+/* choose__us__bot */
+.choose__us__bot {
+    margin: 3rem auto;
+}
+.choose__us__bot .col__item {
+    justify-content: center;
+    align-items: flex-start;
+    margin: 1.5rem auto;
+}
+
+.choose__us__bot .col__item .col__item__content a{
+    text-decoration: none;
+}
+.choose__us__bot .col__item .col__item__content a:hover {
+    color: var(--hover-border-color);
+}
+.choose__us__bot .col__item .col__item__content {
+    padding: auto 5rem;
+    flex-basis: 65%;
+}
+/* make border for icon */
+.choose__us__bot .col__item .col__item__icon i{
+    font-size: 1.8rem;
+    font-weight: 600;
+    /* border: 1px solid #000; */
+    border-radius: 7px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+/* adjust color for icon */
+.choose__us__bot .col__item:nth-child(1) .col__item__icon i {
+    border: 1px solid var(--border-color);
+    color: var(--border-color);
+}
+.choose__us__bot .col__item:nth-child(2) .col__item__icon i {
+    border: 1px solid var(--footer-color);
+    color: var(--footer-color);
+}
+.choose__us__bot .col__item:nth-child(3) .col__item__icon i {
+    border: 1px solid #FF4C4C;
+    color: #FF4C4C;
+}
+.choose__us__bot .col__item:nth-child(4) .col__item__icon i {
+    border: 1px solid #F48924;
+    color: #F48924;
+}
+/* why choose us ***end*** */
+/* contact with us ***start** */
+.contact .contact__content .contact__item {
+    margin: auto 2rem;
+}
+/* contact left */
+.contact .contact__content .contact__item p{
+    display: inline-block;
+    padding-right: 5rem;
+}
+.contact .contact__content .contact__item.contact__left{
+    flex-basis: 50%;
+}
+
+/* contact right */
 /* List responsive */
 
 /* Responsive for Home page */
@@ -1701,219 +2101,328 @@ footer .footer_top{
 }
 
 
-/* Blog Post 1 CSS */
-/* HEADER start */
-header {
-    background: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* Responsive start */
+/* breakpoint 992px - 1199px */
+@media (min-width:1200px){
+    .col-xl-3{
+        width: 23.8%;
+    }
+    .footer_logo.col-3.col-xl-3.col-lg-3.col-md-6.col-sm-12 {
+        width: 22.8%;
+    }
 }
-header{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: 100;
+@media (max-width:1199.98px) {
+    .about__company .col__left .background__elip {
+        border-radius: 18% 70% 70% 30% / 30% 30% 70% 70%;
+        height: 80%;
+    }
+    .about__company .col__left .col__left__title {
+        height: 150px;
+        width: 150px;
+        bottom: 9%;
+    }
+    .about__company .col__left .col__left__title .d-flex {
+        margin-top: 2rem;
+    }
+    .about__company .col__left__title span {
+        font-size: 2rem !important;
 
-}
-header .navbar .nav__left{
-    justify-content: center;
-    align-items: flex-start;
-}
-header .navbar .nav__left h2 {
-    color: var(--black-color);
-    line-height: 0.6;
+    }
+    .about__company .col__left .col__left__title .d-flex p {
+        font-size: 1.2rem !important;
+        margin-top: 0;
+    }
 
-}
-header .navbar .nav__left h2 {
-    color: var(--white-color);
-    font-size: 1.875rem;
-    font-weight: 600;
-    text-align: center;
-}
-header .navbar .nav__left .nav__brand__icon .fa-align-right {
-    color: var(--border-color);
-    font-size: 2rem;
-    margin-right: 0.3rem;
-    line-height: 0.5;
-}
-header .navbar .nav__left h2 span {
-    font-size:0.875rem;
-    line-height: 17px;
-    color: var(--white-color); 
-}
-/* nav menu, nav midle ===================*/
-#btnMenu .span.navbar-toggler-icon i.fa-solid.fa-bars {
-    color: white;
-}
-header .navbar .nav__midle {
-color: var(--white-color);
-flex-direction: column;
-
-}
-header .navbar .nav__midle .nav-item .nav-link {
-    color: var(--white-color);
-    text-transform: uppercase;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    margin: auto 0.5rem;
-    opacity: 0.8;
-    transition: all 0.5s;
-}header .navbar .nav__midle .nav-item:hover .nav-link {
-    color: #fefefe;
-    opacity: 1;
-}
-/* remove icon arrow down of boostrap */
-.navbar-nav .nav-item.dropdown .nav-link::after {
-    display: none;
-}
-/* add new icon arrow down */
-.navbar-nav .nav-item.dropdown .nav-link .fa-angle-down {
-    font-size: 0.8rem;
-}
-
-/* nav right, search btn, mode btn ============ */
-header .navbar .nav__right {
-    color: var(--white-color);
-}
-header .navbar .nav__right .btn__search{
-    background: var(--green-color);
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50%;
-    margin-right: 0;
-    color: var(--white-color);
+    .number__corp {
+        padding: 2rem 0;
+    }
+    .number__corp .col-6.col__right {
+        padding: 0;
+    }
+    .solution .solution__content {
+        width: 70%;
+    }
+    .contact .container {
+        padding: 2rem;
+    }
     
-}
-/* *** CSS CHO OVERLAY SEARCH **************START */
-/* set position cho form search */
-header .navbar .nav__right #searchOverlay .form-inline {
-    bottom: 20%;
-    right: 30%;
-}
-/* increase the width of input of search  */
-header .navbar .nav__right #searchOverlay .form-inline input.form-control.mr-sm-2#inputSearchWidth {
-    width: 500px;
-}
-/* css button search của overlaySearch */
-header .navbar .nav__right #searchOverlay .form-inline button.btn {
-    /* background: #ffffff; */
-    border: 1px solid #ffffff;
-    color: var(--white-color);
-}
-/* set position cho nút close */
-header .navbar .nav__right #searchOverlay button#btnCloseOverlaySearch img {
-    position: fixed;
-    bottom: 25%;
-    right: 30%;
-}
-/* Css overlay of btnSearch */
-.navbar div#navbarNav{
-    flex-direction: row;
-    justify-content: space-around;
-}
-ul.navbar-nav {
-    flex-basis: 70%;
-    justify-content: center;
-}
-#searchOverlay {
-    /* display: none; */
-    position: fixed;
-    bottom: -20%;
-    left: 12%;
-    width: 1700px;
-    height: 1700px;
-    background: rgb(0, 115, 44, 0.5);
-    border-radius: 50%;
-    transform: scale(0);
-    transition: all 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* *** CSS CHO OVERLAY SEARCH **************END */
+    header .navbar .container.container-sm.container-md.container-lg.container-xl {
+        align-items: flex-start;
+    }
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 23.4%;
+    }
 
-header .navbar .nav__right .btn__mode {
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    font-size: 1.5rem;
-    border: none;
-    color: var(--white-color);
-    background: transparent;
 }
-header .navbar .nav__right .btn__mode .btn__light{
-    display: none;
-}
-/* HEADER END */
-/* BREADCRUMB Start */
-.breadcrumb {
-    margin-bottom: 0;
-}
-.breadcrumb__overlay {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-.breadcrumb__overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.breadcrumb__overlay::after {
-    content: "";
-    background: rgba(37, 44, 59, 0.7);
-    width: 100%;
-    height: 400px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+/* breakpoint 768px - 991px */
+@media (max-width: 991.98px) {
+    .navbar-toggler-icon {
+        background-image: none;
+        /* border: 1px solid #fff; */
+    }
+    .navbar-toggler-icon i.fa-solid.fa-bars {
+        color: white;
+    }
+    button#btnMenu {
+        border: 1px solid #fff;
+        height: 30px;
+        width: auto;
+    }
+    .navbar div#navbarNav {
+        background: rgb(0, 0, 0, 0.8);
+        flex-direction: column;
+        width: 100vw;
+        padding: 2rem;
+    }
+    .about__company .container-sm.container-md.container-lg.container-xl.container-xxl {
+        max-width: 880px;
+    }
 
-.breadcrumb__text {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 0;
-    height: 400px;
-    color: var(--white-color);
-}
-.breadcrumb__text h2 {
-    color: var(--white-color);
-    size: 50px;
-    line-height: 60px;
-    font-size: 60px;
-    font-weight: 600;
-}
-.breadcrumb__text p {
-    color: #fff;
-    font-size: 1.25rem;
-}
-/* Breadcrumb end */
+    .value__company .col__item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .value__company .col__item i {
+        margin-bottom: 1rem;
+    }
+    .number .number__corp  .number__corp__content .row {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .number .number__corp  .number__corp__content .col__item {
+        width: 100%;
+        text-align: center;
+    }
+    .number .number__corp  .number__corp__content .col__item .heading2__dark {
+        text-align: center;
+    }
+    .number .number__corp  .number__corp__content .col__item .col__left__bot {
+        margin-top: 1rem;
+    }
+    .number__corp .col__right__pic {
+        width: 50%;
+        margin: auto 0.5rem;
+    }
+    .meet__team__bot .col__team__item .col__team__member p {
+        white-space: nowrap;
+    }
+    .meet__team__content .meet__team__bot .col__team__item {
+        padding: 0;
+        gap: 13px;
+    }
 
 
-/* W3 Layout */
-.w3 .w3_content{
-    background-color: #8080800f;
 }
-.w3 .w3_content .w3_left a img{
-    border-radius: 50%
+/* breakpoint 576px - 767px */
+@media (max-width: 767.98px) {
+    .about__company .row.row__about__top {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }    
+    .value__company {
+        margin-bottom: 3rem;
+        margin-top: 35rem;
+    }
+    .about__company .col__left {
+        width: 62%;
+    }
+    .about__company .col__right {
+        width: 100%;
+        
+        margin-top: 3rem;
+        padding-left: 2rem ;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__company .col__right h2 {
+        text-align: center !important;
+    }
+    .value__company .col__item .col__item__text h3 {
+        font-size: 1rem !important;
+    }
+    .value__company .col__item .col__item__text p {
+        font-size: 0.7rem;
+    }
+    .choose__us__bot {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .meet__team__bot .col__team__item {
+        width: 49% !important;
+    }
+    .choose__us__bot .row .col-6.col__item.d-flex {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .choose__us__bot .row .col-6.col__item.d-flex .col__item__icon {
+        margin-bottom: 1rem;
+    }
+    .choose__us__bot .col__item__content a {
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .choose__us__bot .col__item__content p {
+        font-size: 0.8rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .contact .container {
+        padding: 0;
+    }
+    .contact .container .contact__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem auto;
+    }
+    .row.footer_top.d-flex.justify-content-start.text-white {
+        padding: 0;
+    }
+    footer .container.container-sm.container-md.container-lg.container-xl.container-xxl {
+        /* padding: 0; */
+        padding: 2rem 0.2rem 0.2rem 0.2rem;
+        margin: 0;
+ 
+    }
+    footer .footer_top .col__item {
+        margin: 1rem auto;
+    }
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 44.4%;
+    }
+    footer .footer_top .footer_logo{
+        padding: 0;
+    }
+    footer .footer_top .footer_contact{
+        width: 100%;
+        padding-top: 50px;
+    }
+    footer .footer_top .footer_cate{
+        padding-top: 50px;
+    }
+    footer .footer_top .footer_meta{
+        padding-top: 50px;
+    }
 }
-.w3 .w3_content .w3right .w3right_top a{
-    color: var(--footer-color);
-    font-size: 1.5rem;
-    font-weight: 600;
+/* breakpoint 412px - 575px */
+@media (max-width: 575.98px) {
+    
+    header .navbar .nav__left .nav__brand__icon .fa-align-right {
+        font-size: 1.5rem;
+    } 
+    .breadcrumb__text.container-fluid {
+        justify-content: flex-end;
+    }
+    header .navbar .nav__left h2 {
+        font-size: 1.2rem;
+    }
+    .breadcrumb.container-fluid {
+        height: 200px;
+    } 
+    .breadcrumb__overlay {
+        height: 100%;
+
+    }
+    .breadcrumb__overlay::after {
+        height: 200px;
+    }
+    .breadcrumb__text.container-fluid {
+        height: 200px;
+    }
+    .about__company .col__left {
+        width: 95%;
+    }
+    .about__company .col__right {
+        padding: 0;
+    }
+    .about__company .col__right .btn__flex1.d-flex.align-items-center {
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .row.row__about__bot.d-flex.justify-content-center.align-items-center {
+        flex-direction: column;
+        transform: translatey(7%)
+    }
+    .value__company .col__item {
+        width: 85%;
+        margin: 1rem auto;
+    }
+    .solution .solution__content {
+        width: 100%;
+    }
+    .meet__team__bot .col__team__item {
+        width: 100% !important;
+    }
 }
-.w3 .w3_content .w3right .w3right_bottom a i{
-    color: var(--footer-color);
-    padding-right: 15px;    
-    font-size: 20px;
-    transition: all 0.5s;
+/* breakpoint min - 413px */
+@media (max-width: 320.98px) {
+    .about__company .col__left .background__elip {
+        height: 60%;
+    }
+    .about__company .col__left {
+        width: 98%;
+    }
+    .about__company .col__left .col__left__title {
+        width: 100px;
+        height: 100px;
+    }
+    .about__company .col__left .col__left__title span {
+        font-size: 1.2rem !important;
+    }
+    .about__company .col__left .col__left__title .d-flex p {
+        font-size: 1rem;
+    }
+    .about__company .col__left .col__left__title .d-flex {
+        margin-top: -0.5rem;
+        margin-right: 0.5rem;
+        width: 90%;
+    }
+    .about__company .col__left .col__left__title {
+        bottom: 36%;
+    }
+    .about__company .col__right {
+        margin-top: -8rem !important;
+    }
+    .about__company .col__right span {
+        text-align: center;
+    }
+    .about__company .container.container-sm.container-md.container-lg.container-xl.container-xxl {
+        padding: 1.2rem;
+    }
+    .row.row__about__bot.d-flex.justify-content-center.align-items-center {
+        transform: translatey(-8%);
+    }
+    .value__company {
+        margin-bottom: -6rem;
+    }
+    .number .number__corp .number__corp__content .col__item {
+
+        flex-direction: column;
+    }
+    .number__corp .col__right__pic {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .solution .solution__content {
+        width: 107%;
+    }
+    .choose__us__content h2.heading2__dark{
+        line-height: 1;
+    }
 }
-.w3 .w3_content .w3right .w3right_bottom a i:hover{
-    color: var(--green-color);
-}
+/* Responsive end */
