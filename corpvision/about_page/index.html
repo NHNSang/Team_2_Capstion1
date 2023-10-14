@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../about_page/about.css">
 </head>
 
-<body>
+<body id="myBody">
   <!-- header ****start-->
   <header class="container-fluid m-2">
     <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-center">
@@ -101,9 +101,11 @@
             </div>
             <!-- Btn light & dark mode -->
             <div>
-              <button class="btn__mode">
-                <i class='bx bx-moon btn__dark active'></i>
-                <i class='bx bx-sun btn__light'></i>
+              <button class="btn__mode__moon">
+                <i class='bx bx-moon btn__dark active' id="button_moon"></i>
+              </button>
+              <button class="btn__mode__sun">
+                <i class='bx bx-sun btn__light' id="button_sun"></i>
               </button>
             </div>
           </div>
@@ -168,7 +170,7 @@
     <div class="container value__company">
       <div class="row row__about__bot d-flex justify-content-center align-items-center">
         <!-- grid - column 1 -->
-        <div class="col-4 col__item">
+        <div id="themeChallenges" class="col-4 col__item">
           <i class="fa-brands fa-slack"></i>
           <div class="col__item__text">
             <h3 class="heading3__dark">
@@ -178,7 +180,7 @@
           </div>   
         </div>
         <!-- grid - column 2 -->
-        <div class="col-4 col__item">
+        <div id="themeGallery" class="col-4 col__item">
           <i class="fa-brands fa-algolia"></i>
           <div class="col__item__text">
             <h3 class="heading3__dark">
@@ -188,7 +190,7 @@
           </div>
         </div>
          <!-- grid - column 3 -->
-        <div class="col-4 col__item">
+        <div id="themeFeedBack" class="col-4 col__item">
           <i class="fa-brands fa-stack-overflow"></i>
           <div class="col__item__text">
             <h3 class="heading3__dark">
@@ -204,7 +206,7 @@
 
   <!--web design and digital marketing ***start***-->
   <section> </section>
-  <section class="number container-fluid">
+  <section id="themeNew" class="number container-fluid">
     <div class="number__corp container container-sm container-md container-lg container-xl container-xxl">
       <div class="number__corp__content">
         <div class="row">
@@ -376,7 +378,7 @@
 
   <!-- Why choose us ***start***-->
   <section></section>
-  <section class="choose__us container-fluid">
+  <section id="themeIcon" class="choose__us container-fluid">
     <div class="container container-sm container-md container-lg container-xl container-xxl">
       <div class="choose__us__content">
         <!-- top part of why choose us -->

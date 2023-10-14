@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="../Maincss/style.css">
 </head>
 
-<body>
+<body id="myBody">
   <!-- header ****start-->
   <header class="container-fluid m-2">
     <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-center">
@@ -93,9 +93,11 @@
             </div>
             <!-- Btn light & dark mode -->
             <div>
-              <button class="btn__mode">
-                <i class='bx bx-moon btn__dark active'></i>
-                <i class='bx bx-sun btn__light'></i>
+              <button class="btn__mode__moon">
+                <i class='bx bx-moon btn__dark active' id="button_moon"></i>
+              </button>
+              <button class="btn__mode__sun">
+                <i class='bx bx-sun btn__light' id="button_sun"></i>
               </button>
             </div>
           </div>
@@ -119,7 +121,7 @@
     </div>
   </section>
   <!-- Breadcrumb ***end***-->
-  <section class="new">
+  <section id="themeChallenges" class="new">
     <div class="container">
       <div class="new_content d-flex flex-column justify-content-center align-items-center">
         <div class="new_card d-flex">
@@ -129,7 +131,7 @@
                 <img src="../asset/img/blog1.jpg" alt="">
               </a>
             </div>
-            <div class="card_background">
+            <div id="themeGallery" class="card_background">
               <div class="card_center">
                 <p>Startup Business</p><br>
                 <a href="../single post/page1/index.html">Hello Word!</a>
@@ -155,7 +157,7 @@
                 <img src="../asset/img/blog2.jpg" alt="">
               </a>
             </div>
-            <div class="card_background">
+            <div id="themeFeedBack" class="card_background">
               <div class="card_center">
                 <p>Startup Business</p><br>
                 <a href="../single post/page2/index.html">Companies in NY launched a joint project on a three-tower hall</a>
@@ -181,7 +183,7 @@
                 <img src="../asset/img/blog3.jpg" alt="">
               </a>
             </div>
-            <div class="card_background">
+            <div id="themeNew" class="card_background">
               <div class="card_center">
                 <p>Startup Business</p><br>
                 <a href="../single post/page3/index.html">Design breakthrough upgrades the product and ready to launch</a>
@@ -208,7 +210,7 @@
                 <img src="../asset/img/b3.jpg" alt="">
               </a>
             </div>
-            <div class="card_background">
+            <div id="themeIcon" class="card_background">
               <div class="card_center">
                 <p>Web development</p><br>
                 <a href="../single post/page4/index.html">				The fledgling company builds its business around AC motors			</a>
@@ -234,7 +236,7 @@
                 <img src="../asset/img/blog5.jpg" alt="">
               </a>
             </div>
-            <div class="card_background">
+            <div id="themeIconA" class="card_background">
               <div class="card_center">
                 <p>Startup Business</p><br>
                 <a href="../single post/page5/index.html">
@@ -261,7 +263,7 @@
                 <img src="../asset/img/blog4.jpg" alt="">
               </a>
             </div>
-            <div class="card_background">
+            <div id="themeIconB" class="card_background">
               <div class="card_center">
                 <p>Marketing Strategy</p><br>
                 <a href="../single post/page6/index.html">
@@ -411,7 +413,7 @@
   new WOW().init();
   </script>
   <!-- Main Javascript -->
-  <script src="../index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

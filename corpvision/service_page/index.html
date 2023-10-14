@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body id="myBody">
   <!-- header ****start-->
   <!-- header ****start-->
   <header class="container-fluid m-2">
@@ -94,9 +94,11 @@
             </div>
             <!-- Btn light & dark mode -->
             <div>
-              <button class="btn__mode">
-                <i class='bx bx-moon btn__dark active'></i>
-                <i class='bx bx-sun btn__light'></i>
+              <button class="btn__mode__moon">
+                <i class='bx bx-moon btn__dark active' id="button_moon"></i>
+              </button>
+              <button class="btn__mode__sun">
+                <i class='bx bx-sun btn__light' id="button_sun"></i>
               </button>
             </div>
           </div>
@@ -123,7 +125,7 @@
 
   <!-- check our services ***start-->
   <section></section>
-  <section class="services container-fluid pt-5 pb-5">
+  <section id="themeChallenges" class="services container-fluid pt-5 pb-5">
     <div class="container container-sm container-md container-lg container-xl">
       <div class="services__content">
         <div class="services__top text-centers">
@@ -377,7 +379,7 @@
   <!-- Contact form ***end -->
 <section></section>
   <!-- values ***start -->
-<section class="values container-fluid">
+<section id="themeGallery" class="values container-fluid">
   <div class="container container-sm container-md container-lg container-xl">
     <div class="values__content d-flex flex-column justify-content-center align-items-center text-center">
       <div class="values__content__top m-5">

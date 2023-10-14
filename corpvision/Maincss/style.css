@@ -30,6 +30,34 @@ body {
     font-family: 'Jost', sans-serif;
     overflow-x: hidden;
 }
+/* Switch theme */
+/* Light
+#myBody{
+    background-color: white;
+}
+.dark_mode{
+    background-color: white;
+}
+#myBody #button_sun{
+    display: none;
+}
+#myBody #button_moon{
+    display: block; 
+} */
+/* Dark */
+/* .dark_mode#myBody{
+    background-color: #151421 !important;
+    color: white;
+    z-index: 1000;
+}
+.dark_mode#myBody #button_sun{
+    display: block;
+    color: white;
+}
+.dark_mode#myBody #button_moon{
+    display: none;
+} */
+
 
 /* cài fontsize ,fontweight cho h2,h3,h4 va p */
 /* light mode */
@@ -238,7 +266,7 @@ ul.navbar-nav {
 }
 /* *** CSS CHO OVERLAY SEARCH **************END */
 
-header .navbar .nav__right .btn__mode {
+header .navbar .nav__right .btn__mode__moon {
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -247,9 +275,19 @@ header .navbar .nav__right .btn__mode {
     color: var(--white-color);
     background: transparent;
 }
-header .navbar .nav__right .btn__mode .btn__light{
+header .navbar .nav__right .btn__mode__sun {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
     display: none;
 }
+/* header .navbar .nav__right .btn__mode .btn__light{
+    display: none;
+} */
 /* HEADER END */
 /* CAROUSEL START */
 .carousel {
@@ -488,7 +526,7 @@ section .wave.wave4
 
 /* CHALLENGES */
 .challenges{
-    background-color: #F7F7F7;
+    background: #F7F7F7;
 }
 .challenges .challenges_content{
     padding: 50px 0;
@@ -1842,9 +1880,9 @@ header .navbar .nav__right .btn__mode {
     color: var(--white-color);
     background: transparent;
 }
-header .navbar .nav__right .btn__mode .btn__light{
+/* header .navbar .nav__right .btn__mode .btn__light{
     display: none;
-}
+} */
 /* HEADER END */
 /* BREADCRUMB Start */
 .breadcrumb {

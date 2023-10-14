@@ -39,7 +39,7 @@
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="./Maincss/style.css">
 </head>
-<body>
+<body id="myBody">
 <!-- HEADER START -->
 <header class="container-fluid m-2">
   <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-start">
@@ -103,9 +103,11 @@
           </div>
           <!-- Btn light & dark mode -->
           <div>
-            <button class="btn__mode">
-              <i class='bx bx-moon btn__dark active'></i>
-              <i class='bx bx-sun btn__light'></i>
+            <button class="btn__mode__moon">
+              <i class='bx bx-moon btn__dark active' id="button_moon"></i>
+            </button>
+            <button class="btn__mode__sun">
+              <i class='bx bx-sun btn__light' id="button_sun"></i>
             </button>
           </div>
         </div>
@@ -196,7 +198,7 @@
 <!-- CAROUSEL END -->
 
   <!-- tạo hình sóng start -->
-  <section class="wave__corp">
+  <section class="wave__corp" id="themeWave">
       <div class="wave wave1"></div>
         <div class="wave wave2"></div>
         <div class="wave wave3"></div>
@@ -260,7 +262,7 @@
 <!-- ABOUT END -->
 
 <!-- CHALLENGES START -->
-<section class="challenges">
+<section class="challenges" id="themeChallenges" >
   <div class="container">
     <div class="challenges_content d-flex justify-content-sm-start">
       <div class="challenges_left wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
@@ -272,7 +274,7 @@
         <button> <a href="#about">Discover More</a></button>
       </div>
       <div class="challenges_right wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
-        <div class="challenges_icon ">
+        <div class="challenges_icon " >
           <div class="challenges_icon_img">
             <img src="./asset/img/icon1.png" alt="">
           </div>
@@ -281,7 +283,7 @@
           </h3>
 
         </div>
-        <div class="challenges_icon ">
+        <div id="themeIcon" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="./asset/img/icon2.png" alt="">
           </div>
@@ -290,7 +292,7 @@
           </h3>
 
         </div>
-        <div class="challenges_icon ">
+        <div id="themeIconA" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="./asset/img/icon3.png" alt="">
           </div>
@@ -299,7 +301,7 @@
           </h3>
 
         </div>
-        <div class="challenges_icon ">
+        <div id="themeIconB" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="./asset/img/icon4.png" alt="">
           </div>
@@ -307,7 +309,7 @@
             <a href="">Cretive Ideal</a>
           </h3>
         </div>
-      </div>
+      </div>  
     </div>
   </div>
 </section>
@@ -350,7 +352,7 @@
 <!-- SERVICE END -->
 
 <!-- GALLERY START -->
-<section class="gallery wow fadeInRight">
+<section class="gallery wow fadeInRight" id="themeGallery">
   <div class="container">
     <div class="gallery_content text-center">
       <p>OUR GALLERY</p>
@@ -515,7 +517,7 @@
 <!-- SUCESS END -->
 
 <!-- FEEDBACK START -->
-<section class="feedback wow fadeInUp">
+<section class="feedback wow fadeInUp" id="themeFeedBack">
   <div class="container">
     <div class="feedback_content text-center">
       <div class="feedback_top">
@@ -590,7 +592,7 @@
 <!-- FEEDBACK END -->
 
 <!-- NEWS START -->
-<section class="new wow fadeInLeft">
+<section class="new wow fadeInLeft" id="themeNew">
   <div class="container">
     <div class="new_content d-flex flex-column justify-content-center align-items-center">
       <p>LATEST NEWS</p>
@@ -628,7 +630,7 @@
               <img src="./asset/img/blog2.jpg" alt="">
             </a>
           </div>
-          <div class="card_background">
+          <div id="themecard" class="card_background">
             <div class="card_center">
               <p>Startup Business</p>
               <a href="./single post/page2/index.html">Companies in NY launched a joint project on a three-tower hall</a>
@@ -654,7 +656,7 @@
               <img src="./asset/img/blog3.jpg" alt="">
             </a>
           </div>
-          <div class="card_background">
+          <div id="cardtheme" class="card_background">
             <div class="card_center">
               <p>Startup Business</p>
               <a href="./single post/page3/index.html">Design breakthrough upgrades the product and ready to launch</a>

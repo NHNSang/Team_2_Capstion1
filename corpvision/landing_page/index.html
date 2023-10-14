@@ -39,7 +39,7 @@
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="../landing_page/landing.css">
 </head>
-<body>
+<body id="myBody">
 <!-- HEADER START -->
 <header class="container-fluid m-2">
   <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-start">
@@ -103,9 +103,11 @@
           </div>
           <!-- Btn light & dark mode -->
           <div>
-            <button class="btn__mode">
-              <i class='bx bx-moon btn__dark active'></i>
-              <i class='bx bx-sun btn__light'></i>
+            <button class="btn__mode__moon">
+              <i class='bx bx-moon btn__dark active' id="button_moon"></i>
+            </button>
+            <button class="btn__mode__sun">
+              <i class='bx bx-sun btn__light' id="button_sun"></i>
             </button>
           </div>
         </div>
@@ -281,7 +283,7 @@
 
 
 <!-- CHALLENGES START -->
-<section class="challenges">
+<section id="themeChallenges" class="challenges">
   <div class="container">
     <div class="challenges_content d-flex justify-content-sm-start">
       <div class="challenges_left wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
@@ -293,7 +295,7 @@
         <button> <a href="#about">Discover More</a></button>
       </div>
       <div class="challenges_right wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
-        <div class="challenges_icon ">
+        <div id="themeGallery" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="../asset/img/icon1.png" alt="">
           </div>
@@ -302,7 +304,7 @@
           </h3>
 
         </div>
-        <div class="challenges_icon ">
+        <div id="themeFeedBack" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="../asset/img/icon2.png" alt="">
           </div>
@@ -311,7 +313,7 @@
           </h3>
 
         </div>
-        <div class="challenges_icon ">
+        <div id="themeNew" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="../asset/img/icon3.png" alt="">
           </div>
@@ -320,7 +322,7 @@
           </h3>
 
         </div>
-        <div class="challenges_icon ">
+        <div id="themeIcon" class="challenges_icon ">
           <div class="challenges_icon_img">
             <img src="../asset/img/icon4.png" alt="">
           </div>
@@ -355,7 +357,7 @@
 
 
 <!-- GALLERY START -->
-<section class="gallery wow fadeInRight">
+<section id="themeIconA" class="gallery wow fadeInRight">
   <div class="container">
     <div class="gallery_content text-center">
       <p>OUR GALLERY</p>
@@ -520,7 +522,7 @@
 <!-- SUCESS END -->
 
 <!-- FEEDBACK START -->
-<section class="feedback wow fadeInUp">
+<section id="themeIconB" class="feedback wow fadeInUp">
   <div class="container">
     <div class="feedback_content text-center">
       <div class="feedback_top">
@@ -650,7 +652,7 @@
 <!-- ABOUT END -->
 
 <section> </section>
-<section class="number container-fluid">
+<section id="themecard" class="number container-fluid">
   <div class="number__corp container container-sm container-md container-lg container-xl container-xxl">
     <div class="number__corp__content">
       <div class="row">
@@ -822,7 +824,7 @@
 
  <!-- Why choose us ***start***-->
  <section></section>
- <section class="choose__us container-fluid">
+ <section id="cardtheme" class="choose__us container-fluid">
    <div class="container container-sm container-md container-lg container-xl container-xxl">
      <div class="choose__us__content">
        <!-- top part of why choose us -->
