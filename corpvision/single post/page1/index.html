@@ -31,15 +31,15 @@
 <body>
     
   <!-- header -->
-  <header class="container-fluid m-2">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-center">
+  <header id="headerCorp" class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-start">
       <div class="container container-sm container-md container-lg container-xl">
         <!-- Nav-brand -->
-        <a class="navbar-brand nav__left d-flex" href="../index.html">
+        <a class="navbar-brand nav__left d-flex" href="#">
           <div class="nav__brand__icon">
             <i class="fa fa-align-right"></i>
           </div>
-          <h2>Corp Vision <br /> <span>Vision to your future</span></h2>
+          <h2 id="navBrandH2">Corp Vision <br /> <span id="navBrandSpan">Vision to your future</span></h2>
         </a>
         <!-- Btn khi xem ở breakpoint nhỏ hơn -->
         <button id="btnMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,26 +50,26 @@
         <div class="collapse navbar-collapse nav__midle d-none d-flex" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/Demo/Team_2_Capstion1/corpvision/index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Demo/Team_2_Capstion1/corpvision/about_page/index.html">About</a>
+              <a class="nav-link" href="../../about_page/index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Demo/Team_2_Capstion1/corpvision/service_page/index.html">Services</a>
+              <a class="nav-link" href="../../service_page/index.html">Services</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                 aria-expanded="false">Page <i class="fa-solid fa-angle-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/Demo/Team_2_Capstion1/corpvision/blog_post1/index.html">Blog Posts</a></li>
-                <li><a class="dropdown-item" href="/Demo/Team_2_Capstion1/corpvision/404_page/index.html">404 Page</a></li>
-                <li><a class="dropdown-item" href="/Demo/Team_2_Capstion1/corpvision/landing_page/index.html">Landing Page</a></li>
+                <li><a class="dropdown-item" href="../../blog_post1/index.html">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="../../404_page/index.html">404 Page</a></li>
+                <li><a class="dropdown-item" href="../../landing_page/index.html">Landing Page</a></li>
                 <li><a class="dropdown-item" href="#">Elements page</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Demo/Team_2_Capstion1/corpvision/contact_page/index.html">Contact</a>
+              <a class="nav-link" href="../../contact_page/index.html">Contact</a>
             </li>
           </ul>
           <div class="nav__right d-flex justify-content-between">
@@ -85,24 +85,28 @@
                 <img src="./img/close.png" alt="">
               </button>
               <form class="form-inline d-flex position-fixed">
-                <input id="inputSearchWidth" class="form-control mr-sm-2" type="search" placeholder="Type content to find something" aria-label="Search">
+                <input id="inputSearchWidth" class="form-control mr-sm-2" type="search"
+                  placeholder="Type content to find something" aria-label="Search">
                 <button class="btn my-2 my-sm-0 m-3" type="submit">Search</button>
-            </form>
-            <!-- make a overlay of btnSearch ****End-->
+              </form>
+              <!-- make a overlay of btnSearch ****End-->
             </div>
             <!-- Btn light & dark mode -->
             <div>
-              <button class="btn__mode" id="switchButton">
-                <i class='bx bx-moon btn__dark active'></i>
-                <i class='bx bx-sun btn__light'></i>
+              <button id="btnMode" class="btn__mode__moon">
+                <i class='bx bx-moon btn__dark active' id="button_moon"></i>
+              </button>
+              <button id="btnMode" class="btn__mode__sun">
+                <i class='bx bx-sun btn__light' id="button_sun"></i>
               </button>
             </div>
           </div>
         </div>
         <!-- Btn tìm kiếm và dark,light mode -->
-        
+  
       </div>
     </nav>
+  
   </header>
   <!-- Breadcrumb start-->
   <section class="breadcrumb container-fluid">

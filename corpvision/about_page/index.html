@@ -39,15 +39,15 @@
 
 <body id="myBody">
   <!-- header ****start-->
-  <header class="container-fluid m-2">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-center">
+  <header id="headerCorp" class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between align-item-start">
       <div class="container container-sm container-md container-lg container-xl">
         <!-- Nav-brand -->
-        <a class="navbar-brand nav__left d-flex" href="../index.html">
+        <a class="navbar-brand nav__left d-flex" href="#">
           <div class="nav__brand__icon">
             <i class="fa fa-align-right"></i>
           </div>
-          <h2>Corp Vision <br /> <span>Vision to your future</span></h2>
+          <h2 id="navBrandH2">Corp Vision <br /> <span id="navBrandSpan">Vision to your future</span></h2>
         </a>
         <!-- Btn khi xem ở breakpoint nhỏ hơn -->
         <button id="btnMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -85,7 +85,7 @@
             <button class="btn__search border-0" id="btnSearch">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-
+  
             <!-- make a overlay of btnSearch ****start-->
             <div id="searchOverlay">
               <!-- use css to add div overlay for button when visitor click into btnSearch -->
@@ -101,20 +101,20 @@
             </div>
             <!-- Btn light & dark mode -->
             <div>
-              <button class="btn__mode__moon">
+              <button id="btnMode" class="btn__mode__moon">
                 <i class='bx bx-moon btn__dark active' id="button_moon"></i>
               </button>
-              <button class="btn__mode__sun">
+              <button id="btnMode" class="btn__mode__sun">
                 <i class='bx bx-sun btn__light' id="button_sun"></i>
               </button>
             </div>
           </div>
         </div>
         <!-- Btn tìm kiếm và dark,light mode -->
-
+  
       </div>
     </nav>
-
+  
   </header>
   <!-- header ****end -->
 

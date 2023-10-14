@@ -30,33 +30,13 @@ body {
     font-family: 'Jost', sans-serif;
     overflow-x: hidden;
 }
-/* Switch theme */
-/* Light
-#myBody{
-    background-color: white;
+/* Header */
+.header__fix {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
 }
-.dark_mode{
-    background-color: white;
-}
-#myBody #button_sun{
-    display: none;
-}
-#myBody #button_moon{
-    display: block; 
-} */
-/* Dark */
-/* .dark_mode#myBody{
-    background-color: #151421 !important;
-    color: white;
-    z-index: 1000;
-}
-.dark_mode#myBody #button_sun{
-    display: block;
-    color: white;
-}
-.dark_mode#myBody #button_moon{
-    display: none;
-} */
+
 
 
 /* cài fontsize ,fontweight cho h2,h3,h4 va p */

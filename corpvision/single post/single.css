@@ -101,7 +101,30 @@ a {
 }
 
 /* tạo component button màu xanh chữ trắng ***end */
-
+.header__fix {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+}
+header .navbar .nav__right .btn__mode__moon {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
+}
+header .navbar .nav__right .btn__mode__sun {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--white-color);
+    background: transparent;
+    display: none;
+}
 /* HEADER start */
 header {
     background: transparent;

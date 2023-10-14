@@ -106,7 +106,11 @@ a {
 }
 
 /* tạo component button màu xanh chữ trắng ***end */
-
+.header__fix {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+}
 /* declare for entire of website */
 header .navbar .nav__right .btn__mode__moon {
     height: 50px;

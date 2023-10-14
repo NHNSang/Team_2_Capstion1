@@ -111,7 +111,11 @@ a {
 
 
 
-
+.header__fix {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+}
 
 /* HEADER start */
 header {

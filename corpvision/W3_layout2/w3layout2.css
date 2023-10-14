@@ -119,6 +119,11 @@ header .navbar .nav__right .btn__mode__sun {
     background: transparent;
     display: none;
 }
+.header__fix {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+}
 /* HEADER start */
 header {
     background: transparent;

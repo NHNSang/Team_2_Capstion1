@@ -268,7 +268,11 @@ ul.navbar-nav {
     align-items: center;
 }
 /* *** CSS CHO OVERLAY SEARCH **************END */
-
+.header__fix {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+}
 header .navbar .nav__right .btn__mode {
     height: 50px;
     width: 50px;
