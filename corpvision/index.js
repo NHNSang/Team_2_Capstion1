@@ -17,6 +17,10 @@ document.querySelector(".btn__mode__moon").onclick = function (){
     document.querySelector(".card_background").style.background = "transparent";
     document.querySelector("#themecard").style.background = "transparent";
     document.querySelector("#cardtheme").style.background = "transparent";
+    document.querySelector(".service_item_a").style.background = "#101823";
+    document.querySelector("#serviceTheme").style.background = "#101823";
+    document.querySelector("#themeService").style.background = "#101823";
+
 
 
 
@@ -31,6 +35,7 @@ document.querySelector(".btn__mode__sun").onclick = function (){
     document.querySelector(".btn__mode__moon").style.display = "block";
 
     document.getElementById("myBody").style.backgroundColor = "#fff";
+    document.getElementById("myBody").style.color = "#212529";
 
 }
 

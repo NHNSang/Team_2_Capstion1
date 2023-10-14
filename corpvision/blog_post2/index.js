@@ -28,5 +28,6 @@ document.querySelector(".btn__mode__sun").onclick = function (){
     document.querySelector(".btn__mode__moon").style.display = "block";
 
     document.getElementById("myBody").style.backgroundColor = "#fff";
+    document.getElementById("myBody").style.color = "#212529";
 
 }
